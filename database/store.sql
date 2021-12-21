@@ -219,5 +219,85 @@ GO
 	WHERE MaDH=@madh AND MaTX=@matx
 
  COMMIT TRAN 
- go
+ GO
+ 
+ --thêm đơn hàng của tài xế vào bảng thu nhập
+ CREATE OR ALTER PROC USP_InsertOrderIntoIncomeDriver @madh NVARCHAR(100)
+ AS
+ BEGIN tran
+	IF NOT EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh)
+	BEGIN
+		PRINT('khong the them')
+		ROLLBACK TRAN
+    END
+	IF NOT EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh AND TinhTrangDH=N'Đã giao' AND MaTX IS NOT NULL)
+	BEGIN
+		PRINT('khong the them')
+		ROLLBACK TRAN
+    END
+	--lấy mã tài xế của đơn hàng
+	DECLARE @matx NVARCHAR(100)
+	SELECT @matx=MaTX FROM dbo.DONHANG WHERE MaDH=@madh
+	-- lấy phí vận chuyển từ đơn hàng
 
+	DECLARE @ship MONEY
+	SET @ship = (SELECT PhiVC FROM dbo.DONHANG WHERE MaDH=@madh AND TinhTrangDH=N'Đã giao')
+	DECLARE @shipfee MONEY
+	SET @shipfee=0.2*@ship
+	
+	--nếu đã tồn tại đơn hàng trong và tài xế trong bảng thì update phí
+	IF EXISTS(SELECT*FROM dbo.THUNHAP_TAIXE WHERE MaDH=@madh AND MaTX=@matx)
+	BEGIN
+		UPDATE dbo.THUNHAP_TAIXE 
+		SET PhiVanChuyen_TX=@shipfee
+		WHERE MaDH=@madh AND MaTX=@matx
+    END
+	IF NOT EXISTS(SELECT*FROM dbo.THUNHAP_TAIXE  WHERE MaDH=@madh AND MaTX=@matx)
+	BEGIN
+		INSERT INTO dbo.THUNHAP_TAIXE
+	(
+	    MaTX,
+	    MaDH,
+	    PhiVanChuyen_TX
+	)
+	VALUES
+	(   @matx, -- MaTX - nvarchar(100)
+	    @madh, -- MaDH - nvarchar(100)
+	    @shipfee -- PhiVanChuyen_TX - money
+	    )
+    END
+	
+	--nếu chưa tồn tại thì chỉ thêm vào
+	
+		
+ COMMIT TRAN
+ GO
+ 
+ --cập nhật thu nhập của tài xế trong bảng tài xế
+ CREATE PROC USP_UpdateDriverIncome @matx NVARCHAR(100)
+ AS
+ BEGIN TRAN
+	IF NOT EXISTS(SELECT*FROM dbo.TAIXE WHERE MaTX=@matx)
+	BEGIN
+		PRINT('khong ton tai tai xe')
+		ROLLBACK TRAN
+    END
+	--tính tổng thu nhập từ bảng thu nhập
+	DECLARE @income MONEY
+
+	SELECT @income=SUM(tn.PhiVanChuyen_TX)
+    FROM dbo.THUNHAP_TAIXE tn
+    WHERE tn.MaTX=@matx
+	GROUP BY tn.MaTX
+
+	UPDATE dbo.TAIXE
+	SET ThuNhap=@income
+	WHERE MaTX=@matx
+
+ COMMIT TRAN
+ GO
+ 
+ EXEC dbo.USP_InsertOrderIntoIncomeDriver @madh = N'DH100' -- nvarchar(100)
+                                           -- nvarchar(100)
+ EXEC dbo.USP_UpdateDriverIncome @matx = N'TX1' -- nvarchar(100)
+ 

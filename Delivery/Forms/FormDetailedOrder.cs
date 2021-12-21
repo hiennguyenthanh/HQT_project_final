@@ -34,6 +34,9 @@ namespace Delivery.Forms
             txtDCusID.Text = order.CusID1;
             txtDMethod.Text = order.Method1;
             txtDShipFee.Text = order.ShipFee1.ToString();
+            float receivedFee = (float)(0.3 * order.ShipFee1);
+            //tiền phí mà tài xế nhận được
+            txtDReceivedFee.Text = receivedFee.ToString();
             txtDOrderTime.Text = order.TimeOrder1.ToString("MM/dd/yyyy");
             string temp = order.OAddr1;
             string[] listAddr1 = temp.Split(',');
@@ -64,6 +67,7 @@ namespace Delivery.Forms
         {
             string MADH = txtDOrderID.Text;
             string MATX = this.UserID;
+            //thêm mã tài xế vào đơn hàng đã chọn
             bool result = DriverDAO.Instance.UpdateChoosenOrder(MADH,MATX);
             if (result)
             {

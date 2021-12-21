@@ -21,7 +21,10 @@ namespace Delivery.Forms
             this.UserID = userid;
             LoadInfoDriver(this.UserID);
         }
+        public void UpdateDriverIncome()
+        {
 
+        }
         public Driver getInfoFromUI()
         {
             Driver d = new Driver();

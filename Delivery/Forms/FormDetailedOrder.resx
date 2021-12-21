@@ -120,12 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDChooseOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGoAAAAeCAYAAADEkotAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVGhD7dGxDcJAFARRl0IpVEAJvm44N8I5ICalFDfg
-        iArgsDaynDNIs9JE/2dvcH+0UudT716m9jZOY22Pr02YOtTUnvsnw7SEaYM6ejBIYRKKXpiEohcmoeiF
-        SSh6YRKKXpiEohcmoeiFSSh6YRKKXpiEohcmoeiFSSh6YRKKXpiEohcmoeiFSSh6YRKKXpiEohcmoeiF
-        SSh6YRKKXpiEohcmoeiFaYNa9keDVG+vMHWoOp9Lbevho/2ujjRe2yVMjr9h+ADmQfWcbToFkAAAAABJ
-        RU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAF4AAAAeCAYAAACliqkCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADGSURBVGhD7dCxDcJAFARRl0IpVEAJdjecG+EcEJNSihsg
+        ogI4rIksQm5JZqWJ/o/e4P64qSyH1nWa68v6NZZ6+1jD3uDnet8/WbdW2Df4bw/WKdiFTwe78OlgFz4d
+        7MKng134dLALnw524dPBLnw62IVPB7vw6WAXPh3swqeDXfh0sAufDnbh08EufDrYhU8Hu/DpYBc+HezC
+        p4Nd+HSwC58OduHTwb7Br/ujdapcnrA3+LIcp1IfXx/tdzX08VxPsLv8huEN+9ydr2IQm5kAAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="btnDSaveUpdate.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -184,6 +184,15 @@
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVHhe7dKxDQMhAARB+q+KF2W4DBfgFxKJczabkS65
         eAek1lqfOefP7MZ2TyetMfYBt+yeTlri4i5xkREXGXGRERcZcZERFxlxkREXGXGRERcZcZERFxlxkREX
         GXGRERcZcZERFxlxkREXGXGRERcZcZH5i+t5nu8+zG5s93TSgsIYL0dKn4Qk/06QAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="txtDReceivedFee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAdCAYAAAC0Y74zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACGSURBVHhe7dIxDQMxAARB80fll2EERgDkZclNCHibGema
+        q3dAaq31mXP+zG5s93bSG2MfcMvu7aQnPu4SHxnxkREfGfGRER8Z8ZERHxnxkREfGfGRER8Z8ZERHxnx
+        kREfGfGRER8Z8ZERHxnxkREfGfGRER+Zv/ie5/nuw+zGdm8nPSiM8QJ0YfCB6AgobAAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="txtDMethod.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

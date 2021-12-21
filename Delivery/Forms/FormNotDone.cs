@@ -111,6 +111,17 @@ namespace Delivery.Forms
                 
             this.LoadNotDoneListByID(this.UserID);
             btnDUpdateOrdeStatus.Visible = false;
+
+            //cập nhật lại thu nhập nếu đơn hàng vừa sửa có trạng thái là đã giao
+            //thêm đơn hàng đó vào bảng thu nhập
+            if (selectedOrderStatus=="Đã giao")
+            {
+                string query1 = "EXEC dbo.USP_InsertOrderIntoIncomeDriver @madh";
+                DataProvider.Instance.ExecuteNonQuery(query1, new object[] { selectedOrderID });
+                //cập nhật thu nhập
+                string query2 = "EXEC dbo.USP_UpdateDriverIncome @matx";
+                DataProvider.Instance.ExecuteNonQuery(query2, new object[] { this.UserID });
+            }
         }
     }
 }
