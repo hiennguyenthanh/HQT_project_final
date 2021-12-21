@@ -17,9 +17,9 @@ namespace Delivery.DTO
         private string OAddr;
         private float ShipFee;
         private float Total;
-        private DateTime? TimeOrder;
+        private DateTime TimeOrder;
 
-        public Order(string iD, string cusID, string driverID, string status, string method, string oAddr, float shipFee, float total, DateTime? timeOrder)
+        public Order(string iD, string cusID, string driverID, string status, string method, string oAddr, float shipFee, float total, DateTime timeOrder)
         {
             ID = iD;
             CusID = cusID;
@@ -41,13 +41,13 @@ namespace Delivery.DTO
             OAddr = null;
             ShipFee = 0;
             Total = 0;
-            TimeOrder = null;
+            TimeOrder = DateTime.Now;
         }
         public Order(DataRow row)
         {
             this.ID = (string)row["MaDH"];
             this.Status = (string)row["TinhTrangDH"];
-            this.OAddr = (string)row["DiaChiGiao"];
+            this.OAddr= (string)row["DiaChiGiao"];
             this.CusID = (string)row["MaKH"];
             if (row["MATX"]==DBNull.Value)
             {
@@ -61,7 +61,6 @@ namespace Delivery.DTO
             this.Method = (string)row["HinhThucThanhToan"];
             var money = Convert.ToDecimal(row["PhiVC"]);
             this.ShipFee = (float)money;
-            //this.ShipFee = double.Parse(row["PhiVC"], System.Globalization.NumberStyles.Currency);
             var money1= Convert.ToDecimal(row["TongTien"]);
             this.Total = (float)money1;
             this.TimeOrder = (DateTime)row["ThoiGianDatHang"];
@@ -74,6 +73,6 @@ namespace Delivery.DTO
         public string OAddr1 { get => OAddr; set => OAddr = value; }
         public float ShipFee1 { get => ShipFee; set => ShipFee = value; }
         public float Total1 { get => Total; set => Total = value; }
-        public DateTime? TimeOrder1 { get => TimeOrder; set => TimeOrder = value; }
+        public DateTime TimeOrder1 { get => TimeOrder; set => TimeOrder = value; }
     }
 }

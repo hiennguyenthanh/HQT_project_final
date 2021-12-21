@@ -20,3 +20,8 @@ G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinFor
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.FormDetailedOrder.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.FormOrderList.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.exe.config
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu_UI_v1.5.3.dll
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu_UI_v1.5.3.xml

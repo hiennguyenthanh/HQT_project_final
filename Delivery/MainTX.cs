@@ -14,11 +14,13 @@ namespace Delivery
     {
         public Button currentBtn;
         private Form activeForm;
-        public MainTX()
+        private string UserID;
+        public MainTX(string userid)
         {
             
             InitializeComponent();
-            OpenChildForm(new Forms.FormNotDone(), null);
+            this.UserID = userid;
+            OpenChildForm(new Forms.FormNotDone(this.UserID), null);
             btnDCloseChildForm.Visible = false;
         }
 
@@ -58,7 +60,6 @@ namespace Delivery
             {
                 activeForm.Close();
             }
-
             //highlight button chosen
             ActivateButton(btnSender);
             activeForm = childform;
@@ -75,17 +76,18 @@ namespace Delivery
 
         private void btnDAcc_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormDAccount(), sender);
+            OpenChildForm(new Forms.FormDAccount(this.UserID), sender);
         }
 
         private void btnDList_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormDDList(), sender);
+            //OpenChildForm(new Forms.FormDDList(), sender);
+            OpenChildForm(new Forms.FormOrderList(this.UserID), sender);
         }
 
         private void btnDDoneList_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormDDoneList(), sender);
+            OpenChildForm(new Forms.FormDDoneList(this.UserID), sender);
         }
 
         private void btnDExit_Click(object sender, EventArgs e)
@@ -105,7 +107,7 @@ namespace Delivery
         private void Reset()
         {
             DisableButton();
-            OpenChildForm(new Forms.FormNotDone(), null);
+            OpenChildForm(new Forms.FormNotDone(this.UserID), null);
             currentBtn = null;
             btnDCloseChildForm.Visible = false;
         }

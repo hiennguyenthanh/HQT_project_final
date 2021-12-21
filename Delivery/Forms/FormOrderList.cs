@@ -12,17 +12,36 @@ using System.Windows.Forms;
 
 namespace Delivery.Forms
 {
-    public partial class FormDDList : Form
+    public partial class FormOrderList : Form
     {
         private Form activeForm;
-        public FormDDList()
+        private string UserID;
+        public FormOrderList(string userid)
         {
             InitializeComponent();
-            LoadListByID("TX1");
+            this.UserID = userid;
+            LoadListByArea(this.UserID);
+        }
+        private void OpenChildForm(Form childform)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            //xóa giao diện cũ trên panel 
+            panelOrderDesktop.Controls.Clear();
+            activeForm = childform;
+            activeForm.TopLevel = false;
+            childform.FormBorderStyle = FormBorderStyle.None;
+            childform.Dock = DockStyle.Fill;
+            this.panelOrderDesktop.Controls.Add(childform);
+            this.panelOrderDesktop.Tag = childform;
+            childform.BringToFront();
+            childform.Show();
+            
         }
 
-
-        void LoadListByID(string id)
+        void LoadListByArea(string id)
         {
             //gridNotDone.DataSource = OrderDAO.Instance.GetListOrderById(id);
             List<Order> list = new List<Order>();
@@ -43,11 +62,11 @@ namespace Delivery.Forms
                 string tinhtrang = (string)list[i].Status1;
                 string diachi = (string)list[i].OAddr1;
                 DataGridViewRow newrow = new DataGridViewRow();
-                newrow.CreateCells(gridAllOrder);
+                newrow.CreateCells(gridOrder);
                 newrow.Cells[0].Value = mahd.ToUpper();
                 newrow.Cells[1].Value = tinhtrang;
                 newrow.Cells[2].Value = diachi;
-                gridAllOrder.Rows.Add(newrow);
+                gridOrder.Rows.Add(newrow);
                 i++;
             }
 
@@ -60,49 +79,19 @@ namespace Delivery.Forms
                 Driver d = new Driver(row);
                 area = d.Area1;
             }
-            btnAreaAll.Text = area;
-
-        }
-        private void lblArea_Click(object sender, EventArgs e)
-        {
+            btnAreaOrder.Text = area;
 
         }
 
-        private void gridAllOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
+     
+
+        private void gridOrder_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            DataGridViewRow row=gridAllOrder.Rows[index];
+            DataGridViewRow row = gridOrder.Rows[index];
             string MADH = row.Cells[0].Value.ToString();
-            MessageBox.Show("lấy thành công " + MADH);
+            OpenChildForm(new FormDetailedOrder(MADH));
         }
-
-        private void btnChoose_Click(object sender, EventArgs e)
-        {
-           // OpenChildForm(new Forms.FormDetailedOrder());
-        }
-
-        private void btnScrollNotDone_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
-        {
-
-        }
-        //private void OpenChildForm(Form childform)
-        //{
-
-        //    if (activeForm != null)
-        //    {
-        //        activeForm.Close();
-        //    }
-        //    //highlight button chosen
-           
-        //    activeForm = childform;
-        //    activeForm.TopLevel = false;
-        //    childform.FormBorderStyle = FormBorderStyle.None;
-        //    childform.Dock = DockStyle.Fill;
-        //    this.panelListOrderDesktop.Controls.Add(childform);
-        //    this.panelListOrderDesktop.Tag = childform;
-        //    childform.BringToFront();
-        //    childform.Show();
-            
-        //}
     }
+    
 }

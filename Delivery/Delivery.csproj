@@ -46,10 +46,15 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>C:\DownloadApp\bunifu\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\DownloadApp\bunifu\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +90,18 @@
     <Compile Include="Forms\FormDDoneList.Designer.cs">
       <DependentUpon>FormDDoneList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormDetailedOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDetailedOrder.Designer.cs">
+      <DependentUpon>FormDetailedOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormOrderList.Designer.cs">
+      <DependentUpon>FormOrderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormNotDone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDDoneList.resx">
       <DependentUpon>FormDDoneList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDetailedOrder.resx">
+      <DependentUpon>FormDetailedOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormOrderList.resx">
+      <DependentUpon>FormOrderList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormNotDone.resx">
       <DependentUpon>FormNotDone.cs</DependentUpon>

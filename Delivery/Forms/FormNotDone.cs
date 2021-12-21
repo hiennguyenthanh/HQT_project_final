@@ -2,23 +2,23 @@
 using Delivery.DTO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Delivery.Forms
 {
     public partial class FormNotDone : Form
     {
-        private string matx ="TX3";
-        public FormNotDone()
+        
+        private string selectedOrderID;
+        private string selectedOrderStatus;
+        private string UserID;
+        public FormNotDone(string userid)
         {
             InitializeComponent();
-            LoadNotDoneListByID(matx);
+            this.UserID = userid;
+            LoadNotDoneListByID(this.UserID);
+            LoadInfoCombobox();
         }
 
         void LoadNotDoneListByID(string id)
@@ -73,6 +73,44 @@ namespace Delivery.Forms
         private void lblArea_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridNotDone_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            DataGridViewRow row = gridNotDone.Rows[index];
+            selectedOrderID = row.Cells[0].Value.ToString();
+            string status = row.Cells[1].Value.ToString();
+            cbOrderStatus.Text= status;
+            btnDUpdateOrdeStatus.Visible = true;
+
+        }
+        public void LoadInfoCombobox()
+        {
+            cbOrderStatus.Items.Add("Tài xế đã nhận hàng");
+            cbOrderStatus.Items.Add("Đang giao");
+            cbOrderStatus.Items.Add("Đã giao");
+
+        }
+
+        //lưu thay đổi trạng thái đơn hàng 
+        private void btnDUpdateOrdeStatus_Click(object sender, EventArgs e)
+        {
+            selectedOrderStatus = cbOrderStatus.SelectedItem.ToString();
+            bool result = DriverDAO.Instance.UpdateOrderStatus(selectedOrderID, this.UserID, selectedOrderStatus);
+            if (result)
+            {
+                MessageBox.Show("Cập nhật trạng thái đơn hàng thành công");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật trạng thái đơn hàng thất bại");
+            }
+            //xóa dữ liệu cũ và  load lại dữ liệu mới
+            gridNotDone.Rows.Clear();
+                
+            this.LoadNotDoneListByID(this.UserID);
+            btnDUpdateOrdeStatus.Visible = false;
         }
     }
 }

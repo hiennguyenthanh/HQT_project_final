@@ -14,10 +14,13 @@ namespace Delivery.Forms
 {
     public partial class FormDDoneList : Form
     {
-        public FormDDoneList()
+        private string UserID;
+
+        public FormDDoneList(string userid)
         {
             InitializeComponent();
-            LoadDoneListByID("TX3");
+            this.UserID = userid;
+            LoadDoneListByID(this.UserID);
         }
 
         private void btnScrollNotDone_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
@@ -45,16 +48,7 @@ namespace Delivery.Forms
                 i++;
             }
 
-            //hiện khu vực hoạt động
-            string area = "";
-            DataTable table = new DataTable();
-            table = DataProvider.Instance.ExecuteQuery1("select * from TAIXE where MaTX = '" + id + "'");
-            foreach (DataRow row in table.Rows)
-            {
-                Driver d = new Driver(row);
-                area = d.Area1;
-            }
-            btnDoneArea.Text = area;
+            
 
         }
     }

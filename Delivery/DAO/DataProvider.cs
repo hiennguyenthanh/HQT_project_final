@@ -17,7 +17,7 @@ namespace Delivery.DAO
 
         private string connectStr = "Data Source=.\\sqlexpress;Initial Catalog=QLHD;Integrated Security=True";
 
-        public DataTable ExecuteQuery1(string query, object[] parameter = null)
+        public DataTable ExecuteQuery1(string query, object[] parameter=null)
         {
             DataTable data = new DataTable();
 
@@ -29,16 +29,17 @@ namespace Delivery.DAO
 
                 if (parameter != null)
                 {
-                    string[] listPara = query.Split(' ');
+                    string[] listPara = query.Split();
                     int i = 0;
                     foreach (string item in listPara)
                     {
-                        if (item.Contains('@'))
+                        if (item.Contains("@"))
                         {
                             //command.Parameters.Add(item, SqlDbType.NVarChar | SqlDbType.Money | SqlDbType.Int).Value = parameter[i];
                             command.Parameters.AddWithValue(item, parameter[i]);
                             i++;
                         }
+                        
                     }
                 }
 
