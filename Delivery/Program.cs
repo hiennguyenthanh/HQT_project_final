@@ -19,7 +19,7 @@ namespace Delivery
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            Application.Run(new MainTX("TX1"));
+            Application.Run(new fLogin());
         }
     }
 }

@@ -25,3 +25,8 @@ G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.F
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.exe.config
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu_UI_v1.5.3.dll
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu_UI_v1.5.3.xml
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.fLogin.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.fSignUp.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.fCreateNewAccount.resources

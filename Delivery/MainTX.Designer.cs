@@ -174,6 +174,7 @@ namespace Delivery
             this.btnDInfo.Text = "username";
             this.btnDInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDInfo.UseVisualStyleBackColor = true;
+            this.btnDInfo.Click += new System.EventHandler(this.btnDInfo_Click);
             // 
             // panel2
             // 

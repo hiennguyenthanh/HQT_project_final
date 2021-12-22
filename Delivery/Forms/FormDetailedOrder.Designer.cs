@@ -60,6 +60,10 @@ namespace Delivery.Forms
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
@@ -80,10 +84,6 @@ namespace Delivery.Forms
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnDChooseOrder = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -102,19 +102,19 @@ namespace Delivery.Forms
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtDReceivedFee = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtDMethod = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtDCusID = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtDOrderID = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtDOrderTime = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtDShipFee = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lnb = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDReceivedFee = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -833,6 +833,81 @@ namespace Delivery.Forms
             this.panel4.TabIndex = 1;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // txtDReceivedFee
+            // 
+            this.txtDReceivedFee.AcceptsReturn = false;
+            this.txtDReceivedFee.AcceptsTab = false;
+            this.txtDReceivedFee.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDReceivedFee.AnimationSpeed = 200;
+            this.txtDReceivedFee.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDReceivedFee.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtDReceivedFee.BackColor = System.Drawing.Color.Transparent;
+            this.txtDReceivedFee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtDReceivedFee.BackgroundImage")));
+            this.txtDReceivedFee.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtDReceivedFee.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtDReceivedFee.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtDReceivedFee.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtDReceivedFee.BorderRadius = 1;
+            this.txtDReceivedFee.BorderThickness = 1;
+            this.txtDReceivedFee.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDReceivedFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDReceivedFee.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtDReceivedFee.DefaultText = "";
+            this.txtDReceivedFee.Enabled = false;
+            this.txtDReceivedFee.FillColor = System.Drawing.Color.White;
+            this.txtDReceivedFee.HideSelection = true;
+            this.txtDReceivedFee.IconLeft = null;
+            this.txtDReceivedFee.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDReceivedFee.IconPadding = 10;
+            this.txtDReceivedFee.IconRight = null;
+            this.txtDReceivedFee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDReceivedFee.Lines = new string[0];
+            this.txtDReceivedFee.Location = new System.Drawing.Point(-2, 191);
+            this.txtDReceivedFee.MaxLength = 32767;
+            this.txtDReceivedFee.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDReceivedFee.Modified = false;
+            this.txtDReceivedFee.Multiline = false;
+            this.txtDReceivedFee.Name = "txtDReceivedFee";
+            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties29.FillColor = System.Drawing.Color.Empty;
+            stateProperties29.ForeColor = System.Drawing.Color.Empty;
+            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDReceivedFee.OnActiveState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.Empty;
+            stateProperties30.FillColor = System.Drawing.Color.White;
+            stateProperties30.ForeColor = System.Drawing.Color.Empty;
+            stateProperties30.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtDReceivedFee.OnDisabledState = stateProperties30;
+            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDReceivedFee.OnHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.Silver;
+            stateProperties32.FillColor = System.Drawing.Color.White;
+            stateProperties32.ForeColor = System.Drawing.Color.Empty;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtDReceivedFee.OnIdleState = stateProperties32;
+            this.txtDReceivedFee.PasswordChar = '\0';
+            this.txtDReceivedFee.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtDReceivedFee.PlaceholderText = "Enter text";
+            this.txtDReceivedFee.ReadOnly = false;
+            this.txtDReceivedFee.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDReceivedFee.SelectedText = "";
+            this.txtDReceivedFee.SelectionLength = 0;
+            this.txtDReceivedFee.SelectionStart = 0;
+            this.txtDReceivedFee.ShortcutsEnabled = true;
+            this.txtDReceivedFee.Size = new System.Drawing.Size(159, 29);
+            this.txtDReceivedFee.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtDReceivedFee.TabIndex = 5;
+            this.txtDReceivedFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDReceivedFee.TextMarginBottom = 0;
+            this.txtDReceivedFee.TextMarginLeft = 5;
+            this.txtDReceivedFee.TextMarginTop = 0;
+            this.txtDReceivedFee.TextPlaceholder = "Enter text";
+            this.txtDReceivedFee.UseSystemPasswordChar = false;
+            this.txtDReceivedFee.WordWrap = true;
+            // 
             // txtDMethod
             // 
             this.txtDMethod.AcceptsReturn = false;
@@ -1223,6 +1298,19 @@ namespace Delivery.Forms
             this.panel3.Size = new System.Drawing.Size(178, 305);
             this.panel3.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(0, 180);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.label1.Size = new System.Drawing.Size(145, 40);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Phí được nhận (30%)";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -1286,94 +1374,6 @@ namespace Delivery.Forms
             this.lnb.Size = new System.Drawing.Size(97, 20);
             this.lnb.TabIndex = 0;
             this.lnb.Text = "Mã đơn hàng";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(0, 180);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label1.Size = new System.Drawing.Size(145, 40);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Phí được nhận (30%)";
-            // 
-            // txtDReceivedFee
-            // 
-            this.txtDReceivedFee.AcceptsReturn = false;
-            this.txtDReceivedFee.AcceptsTab = false;
-            this.txtDReceivedFee.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDReceivedFee.AnimationSpeed = 200;
-            this.txtDReceivedFee.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtDReceivedFee.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtDReceivedFee.BackColor = System.Drawing.Color.Transparent;
-            this.txtDReceivedFee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtDReceivedFee.BackgroundImage")));
-            this.txtDReceivedFee.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtDReceivedFee.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtDReceivedFee.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtDReceivedFee.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtDReceivedFee.BorderRadius = 1;
-            this.txtDReceivedFee.BorderThickness = 1;
-            this.txtDReceivedFee.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDReceivedFee.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDReceivedFee.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txtDReceivedFee.DefaultText = "";
-            this.txtDReceivedFee.Enabled = false;
-            this.txtDReceivedFee.FillColor = System.Drawing.Color.White;
-            this.txtDReceivedFee.HideSelection = true;
-            this.txtDReceivedFee.IconLeft = null;
-            this.txtDReceivedFee.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDReceivedFee.IconPadding = 10;
-            this.txtDReceivedFee.IconRight = null;
-            this.txtDReceivedFee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDReceivedFee.Lines = new string[0];
-            this.txtDReceivedFee.Location = new System.Drawing.Point(-2, 191);
-            this.txtDReceivedFee.MaxLength = 32767;
-            this.txtDReceivedFee.MinimumSize = new System.Drawing.Size(100, 20);
-            this.txtDReceivedFee.Modified = false;
-            this.txtDReceivedFee.Multiline = false;
-            this.txtDReceivedFee.Name = "txtDReceivedFee";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDReceivedFee.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.Empty;
-            stateProperties30.FillColor = System.Drawing.Color.White;
-            stateProperties30.ForeColor = System.Drawing.Color.Empty;
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDReceivedFee.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDReceivedFee.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtDReceivedFee.OnIdleState = stateProperties32;
-            this.txtDReceivedFee.PasswordChar = '\0';
-            this.txtDReceivedFee.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDReceivedFee.PlaceholderText = "Enter text";
-            this.txtDReceivedFee.ReadOnly = false;
-            this.txtDReceivedFee.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDReceivedFee.SelectedText = "";
-            this.txtDReceivedFee.SelectionLength = 0;
-            this.txtDReceivedFee.SelectionStart = 0;
-            this.txtDReceivedFee.ShortcutsEnabled = true;
-            this.txtDReceivedFee.Size = new System.Drawing.Size(159, 29);
-            this.txtDReceivedFee.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtDReceivedFee.TabIndex = 5;
-            this.txtDReceivedFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDReceivedFee.TextMarginBottom = 0;
-            this.txtDReceivedFee.TextMarginLeft = 5;
-            this.txtDReceivedFee.TextMarginTop = 0;
-            this.txtDReceivedFee.TextPlaceholder = "Enter text";
-            this.txtDReceivedFee.UseSystemPasswordChar = false;
-            this.txtDReceivedFee.WordWrap = true;
             // 
             // FormDetailedOrder
             // 

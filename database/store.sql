@@ -301,3 +301,247 @@ GO
                                            -- nvarchar(100)
  EXEC dbo.USP_UpdateDriverIncome @matx = N'TX1' -- nvarchar(100)
  
+
+ create OR ALTER PROC USP_GetUserID @loginname nvarchar(100), @pass nvarchar(100)
+ AS
+ BEGIN 
+	SELECT MAND, TrangThai FROM dbo.TAIKHOAN WHERE UserID=@loginname AND UserPassword=@pass
+ END
+ GO
+
+  --Kiểm tra tài khoản có tồn tại
+ CREATE PROC USP_CheckAccountExist @loginname nvarchar(100), @pass nvarchar(100)
+ AS
+ BEGIN
+	SELECT*FROM dbo.TAIKHOAN WHERE UserID=@loginname AND UserPassword=@pass
+ END
+ GO
+ 
+  CREATE OR ALTER FUNCTION getNumber(@userID NVARCHAR(100))
+ RETURNS INT
+ BEGIN 
+	DECLARE @length INT
+	DECLARE @user NVARCHAR(100)
+	SET @user=@userID
+	SET @length = LEN(@user)
+	DECLARE @number NVARCHAR(100)
+	SET @number = SUBSTRING(@user,3,@length)
+	DECLARE @ordinal INT
+	SET @ordinal =CAST(@number AS INT )
+	RETURN @ordinal
+ END
+ GO
+
+ --thêm tài khoản vảo bảng tài khoản
+ CREATE OR ALTER PROC USP_InsertAccount @loginname NVARCHAR(100), @pass NVARCHAR(100), @roleUser NVARCHAR(100)
+ AS
+ BEGIN
+	--tạo mã người dùng
+	DECLARE @n INT 
+	DECLARE @numberInID INT 
+	DECLARE @newNumber INT 
+	DECLARE @newUserID NVARCHAR(100)
+	DECLARE @max INT = 0
+	DECLARE @role NVARCHAR(100)
+	DECLARE @id NVARCHAR(100)
+	DECLARE @index INT = 1
+	SET @role=@roleUser
+	IF (@role=N'Tài xế')
+	BEGIN
+		--lấy mã người dùng lớn nhất
+		
+		
+		SELECT @n=COUNT(*) FROM dbo.TAIXE 
+		
+		WHILE @index <= @n
+		BEGIN
+			--lay ma tai xe
+			SELECT @id=dbo.TAIXE.MaTX
+			FROM dbo.TAIXE,  (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX 
+													FROM dbo.TAIXE ) as T
+			WHERE T.MyIndex=@index AND dbo.TAIXE.MaTX = t.MaTX
+			
+			--lấy số từ mã người dùng
+			SELECT @numberInID=dbo.getNumber(@id)
+			IF (@numberInID > @max )
+			BEGIN
+				SET @max=@numberInID
+				SET @newNumber=@max+1 --tang gia tri len 1
+            END
+			SET @index=@index+1 --tang i
+		END
+
+		--tạo mã người dùng mới
+		SET @newUserID = 'TX' + CAST(@newNumber AS NVARCHAR(100))
+		--THÊM VÀO BẢNG TÀI KHOẢN
+		INSERT INTO dbo.TAIKHOAN
+		(
+		    MaND,
+		    UserID,
+		    UserPassword,
+		    TrangThai
+		)
+		VALUES
+		(   @newUserID, -- MaND - nvarchar(100)
+		    @loginname, -- UserID - nvarchar(100)
+		    @pass, -- UserPassword - nvarchar(100)
+		    2   -- TrangThai - int
+		    )
+		--THÊM VÀO BẢNG TÀI XẾ
+		INSERT INTO TAIXE(MaTX) VALUES (@newUserID)
+		RETURN 
+    END
+
+	--Nhân viên
+	IF (@role=N'Nhân viên')
+	BEGIN
+		--lấy mã người dùng lớn nhất
+		
+		SELECT @n=COUNT(*) FROM dbo.NHANVIEN
+		WHILE @index <= @n
+		BEGIN
+			--lay ma tai xe
+			SELECT @id=dbo.NHANVIEN.MaNV
+			FROM dbo.NHANVIEN,  (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS StaffIndex, MaNV 
+													FROM dbo.NHANVIEN ) as T
+			WHERE T.StaffIndex=@index AND dbo.NHANVIEN.MaNV = t.MaNV
+			
+			--lấy số từ mã người dùng
+			SELECT @numberInID=dbo.getNumber(@id)
+			IF (@numberInID > @max )
+			BEGIN
+				SET @max=@numberInID
+				SET @newNumber=@max+1 --tang gia tri len 1
+            END
+			SET @index=@index+1 --tang i
+		END
+
+		--tạo mã người dùng mới
+		SET @newUserID = 'NV' + CAST(@newNumber AS NVARCHAR(100))
+		--THÊM VÀO BẢNG TÀI KHOẢN
+		INSERT INTO dbo.TAIKHOAN
+		(
+		    MaND,
+		    UserID,
+		    UserPassword,
+		    TrangThai
+		)
+		VALUES
+		(   @newUserID, -- MaND - nvarchar(100)
+		    @loginname, -- UserID - nvarchar(100)
+		    @pass, -- UserPassword - nvarchar(100)
+		    2   -- TrangThai - int
+		    )
+		--THÊM VÀO BẢNG nhan vien
+		INSERT INTO NHANVIEN(MaNV) VALUES (@newUserID)
+		RETURN 
+    END
+
+	--khach hang
+	IF (@role=N'Khách hàng')
+	BEGIN
+		--lấy mã người dùng lớn nhất
+		
+		SELECT @n=COUNT(*) FROM dbo.KHACHHANG
+		WHILE @index <= @n
+		BEGIN
+			--lay ma tai xe
+			SELECT @id=dbo.KHACHHANG.MaKH
+			FROM dbo.KHACHHANG,  (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS CusIndex, MaKH 
+													FROM dbo.KHACHHANG ) as T
+			WHERE T.CusIndex=@index AND dbo.KHACHHANG.MaKH = t.MaKH
+			
+			--lấy số từ mã người dùng
+			SELECT @numberInID=dbo.getNumber(@id)
+			IF (@numberInID > @max )
+			BEGIN
+				SET @max=@numberInID
+				SET @newNumber=@max+1 --tang gia tri len 1
+            END
+			SET @index=@index+1 --tang i
+		END
+
+		--tạo mã người dùng mới
+		SET @newUserID = 'KH' + CAST(@newNumber AS NVARCHAR(100))
+		--THÊM VÀO BẢNG TÀI KHOẢN
+		INSERT INTO dbo.TAIKHOAN
+		(
+		    MaND,
+		    UserID,
+		    UserPassword,
+		    TrangThai
+		)
+		VALUES
+		(   @newUserID, -- MaND - nvarchar(100)
+		    @loginname, -- UserID - nvarchar(100)
+		    @pass, -- UserPassword - nvarchar(100)
+		    2   -- TrangThai - int
+		    )
+		--THÊM VÀO BẢNG khach hang
+		INSERT INTO KHACHHANG(MaKH) VALUES (@newUserID)
+		RETURN 
+    END
+
+	--doi tac
+	IF (@role=N'Đối tác')
+	BEGIN
+		--lấy mã người dùng lớn nhất
+		
+		SELECT @n=COUNT(*) FROM dbo.DOITAC
+		WHILE @index <= @n
+		BEGIN
+			--lay ma tai xe
+			SELECT @id=dbo.DOITAC.MaDT
+			FROM dbo.DOITAC,  (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS SupIndex, MaDT
+													FROM dbo.DOITAC ) as T
+			WHERE T.SupIndex=@index AND dbo.DOITAC.MaDT = t.MaDT
+			
+			--lấy số từ mã người dùng
+			SELECT @numberInID=dbo.getNumber(@id)
+			IF (@numberInID > @max )
+			BEGIN
+				SET @max=@numberInID
+				SET @newNumber=@max+1 --tang gia tri len 1
+            END
+			SET @index=@index+1 --tang i
+		END
+
+		--tạo mã người dùng mới
+		SET @newUserID = 'DT' + CAST(@newNumber AS NVARCHAR(100))
+		--THÊM VÀO BẢNG TÀI KHOẢN
+		INSERT INTO dbo.TAIKHOAN
+		(
+		    MaND,
+		    UserID,
+		    UserPassword,
+		    TrangThai
+		)
+		VALUES
+		(   @newUserID, -- MaND - nvarchar(100)
+		    @loginname, -- UserID - nvarchar(100)
+		    @pass, -- UserPassword - nvarchar(100)
+		    2   -- TrangThai - int
+		    )
+		--THÊM VÀO BẢNG nhan vien
+		INSERT INTO DOITAC(MaDT) VALUES (@newUserID)
+		RETURN 
+    END
+ END
+ GO
+
+ EXEC USP_InsertAccount 'khachhangmoi', '123456' , N'Khách hàng'
+ 
+ DELETE dbo.TAIKHOAN WHERE MaND='tx8'
+ SELECT dbo.getNumber('NV1000')
+ 
+ DECLARE @index INT =2
+ SELECT dbo.TAIXE.MaTX
+ FROM dbo.TAIXE, (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX 
+													FROM dbo.TAIXE ) as t
+ WHERE t.MyIndex=@index AND TAIXE.MaTX = t.MaTX
+
+
+--kiểm tra user có bị trùng
+
+SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX
+FROM dbo.TAIXE 

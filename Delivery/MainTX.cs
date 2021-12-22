@@ -22,6 +22,7 @@ namespace Delivery
             this.UserID = userid;
             OpenChildForm(new Forms.FormNotDone(this.UserID), null);
             btnDCloseChildForm.Visible = false;
+            btnDInfo.Text = this.UserID;
         }
 
         private void ActivateButton(object btnSender)
@@ -112,6 +113,9 @@ namespace Delivery
             btnDCloseChildForm.Visible = false;
         }
 
-
+        private void btnDInfo_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
