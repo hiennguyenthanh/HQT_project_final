@@ -8,25 +8,32 @@ namespace Delivery.DTO
 {
     public class DetailedOrder
     {
-        private string ID;
+        private string  OrderID;
         private string ProductId;
         private int Quality;
         private float Price;
         private float TotalPrice;
+        private string ProductName;
 
-        public DetailedOrder(string iD, string productId, int quality, float price, float totalPrice)
+        public DetailedOrder(string orderiD, string productId, string productName, int quality, float price, float totalPrice)
         {
-            ID1 = iD;
+            OrderID = orderiD;
             ProductId1 = productId;
             Quality1 = quality;
             Price1 = price;
             TotalPrice1 = totalPrice;
+            ProductName = productName;
         }
 
-        public string ID1 { get => ID; set => ID = value; }
+        public DetailedOrder()
+        {
+
+        }
+        public string OrderID1 { get => OrderID; set => OrderID = value; }
         public string ProductId1 { get => ProductId; set => ProductId = value; }
         public int Quality1 { get => Quality; set => Quality = value; }
         public float Price1 { get => Price; set => Price = value; }
         public float TotalPrice1 { get => TotalPrice; set => TotalPrice = value; }
+        public string ProductName1 { get => ProductName; set => ProductName = value; }
     }
 }

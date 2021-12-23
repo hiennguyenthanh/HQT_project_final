@@ -117,38 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="x-mark-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x-mark-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIAAAAAjCAYAAABctgKLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADlSURBVHhe7ZKxDcJAFMX+BihkASpuAcS1TMCi1LSMkgWo
+        mAAS5CrKBHl+kpv719nlXB1aPw3n/ji2/pUErs/FOfqrZvmv7Y+yYyb0V20cJQD0G0Aq6DeAVNBvAKmg
+        3wBSQb8BpIJ+A0gF/QaQCvoNIBX0G0Aq6DeAVNBvAKmg3wBSQb8BpIJ+A0gF/QaQCvoNIBX0G0Aq6DeA
+        VNBvAKmg3wBSQb8BpIJ+A0gF/QaQCvoNIBX0G0Aq6DeAVNBvAKmg3wBSQf8/gGl9lH0ztP5Bf9XY+m1+
+        fK8/yT5Z5I/tcke/y13VD0EkRa/cmyx4AAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="Shopping Cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shopping Cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-x-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-x-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPic.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pass Fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pass Fail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Task Completed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Task Completed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Male User (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male User (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Door Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Door Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtCSearchByProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAm4AAAAuCAYAAACRb5VWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPZSURBVHhe7d29U1xVGMDhLVOmpLS0TJnSMpVj44ylZca/
+        wNLCwhk7Cws7a/8Bq7B77+UrxGwWGBY2sEAIE0d0CDoaleJ6XjiOQ3JBSIBlM8878xTMnHuX8jfnfrWM
+        McYYY8xbOpOTk7eTz4qimEm6yW673a4BADhZNFNup260VHIn59XFTjrxzU6n802yPzU9vfeot1D3Vwf1
+        ymCtXtvYrDe3dwAAOEU0U7RTiJaamZ3bS0F3UJbld6m13snZ9WaTYu2LVIZ7vYXFg/XNrcZ/BACA89t4
+        8rReWu7XKd72YpMsBdyNnGDnm9hlSyeZ6z7qvRhubTf+GAAAby4CLjbJUnsNUoNN5Bw728R2XVlW/f7q
+        4K+mkwMAcPEGa8M6Ndiz1GK3cpadPkc7bVU/Dmw6IQAAlyduTauq6qfYSMt5dvLE5VE7bQAAo/N4fSPu
+        exvGhlpOtFcnLfiq21t40XQCAACuztJy/++iLL/PmXZ8UtFNFEWxHzfHNR0MAMDVqqrqeeP9bvEIajzN
+        0HQQAABXb3llNV7cey/n2tGkkruRwu1Xr/0AALheUrj9HldGc7YdhtudeHtv02IAAEbnh4cPI9zu5mw7
+        vEz69cLiUuNiAABG55XLpemPmfj2aNNiAABGJ14N0ul0dnK2RbiVQy/cBQC4fuIZhHa7/UfOtlYr/vBg
+        AgDA9ZRarc7ZdhhujYsAABg94QYAMCaEGwDAmBBuAABjQrgBAIwJ4QYAMCaEGwDAmBBuAABjQrgBAIwJ
+        4QYAMCaEGwDAmBBuAABj4uVwO9h48rRxIQAAo3Us3Dqdzs7j9Y3GhQAAjE5srsUmW862Vqsoiu7KYK1x
+        MQAAo7O2sVmnVtvN2XYYbt8uLi03LgYAYHT6q4MIt5mcba3W5OTkx/MPHvzWtBgAgNHp9hYOUqt9nrPt
+        MNxudjqdP5sWAwAwOlVVPU+tditn29EURXFveWW18QAAAK7eYG1YF0U5zLn230TJRdE1HQQAwNWbnZ2L
+        3bYPcq4dH7tuAADXw4m7bf9OKrqJqqq24rHTphMAAHD5hlvbdVVN/Zja7N2cac1zeMl0aupnX1IAABiN
+        ubn7v5Rl+WHOs9On3W6/H/G2vrnVeDIAAC5e7LRFtBVF8UnOsrNN7LyVZfXMFxUAAC5f3NMWl0fPvNP2
+        8sQ9b6n4utPTM3txsqYfAQDg9cWzBffn5/fjQYT/vaftLJNO8l6crCyr/W6vdxC7cO6BAwB4PdFSvYXF
+        emp6eq8oit3UWh/l7Lq4iQpMPo1duPhKfRJfqwcA4BxyS32Zuup2zixjjDHGGPP2TKv1Dz8GjUGUNZ3e
+        AAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

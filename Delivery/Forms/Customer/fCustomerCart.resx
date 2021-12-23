@@ -117,38 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="x-mark-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x-mark-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBuy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJcAAAAjCAYAAACZxJgaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD4SURBVHhe7dyxTQNBGITRbcSYUqiA9NwHnCiKmJRSaMCR
+        K7BvpQkvsRlnb6SXrP7w04U3zJ664/L1elzW75fTeoX/+fyZPSWtMbaH3/1DuN/htP4lrRnX/hE8KmmJ
+        i76kJS76kpa46Eta4qIvaYmLvqQlLvqSlrjoS1rioi9piYu+pCUu+pKWuOhLWuKiL2mJi76kJS76kpa4
+        6Eta4qIvaYmLvqQlLvqSlrjoS1rioi9piYu+pCUu+pKWuOhLWuKiL2mJi76kJS76kpa46Eta4qIvaY0x
+        /0qydwCPOCzrJWnN/3N9vG0P571DuMcMa/tYvScts2dsjBsPt8EHqLdtewAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="Shopping Cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shopping Cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtTotalOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOkAAAAjCAYAAABxRC0xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVHhe7dOxCQMxAARB9V+VhMr4MlyAjUCJO9iHGbjk
+        8h3AC+y9nznn18w6O13eRMc4B9ByuryJihSKRApxIoU4kUKcSCFOpBAnUogTKcSJFOJECnEihTiRQpxI
+        IU6kECdSiBMpxIkU4kQKcSKFOJFCnEghTqQQJ1KIEynEiRTiRApxIoU4kUKcSCFOpBD3F+la63MOM+vs
+        dHkTBbrG+AFsiiic5uIIbQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtShipFee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOkAAAAjCAYAAABxRC0xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVHhe7dOxCQMxAARB9V+VhMr4MlyAjUCJO9iHGbjk
+        8h3AC+y9nznn18w6O13eRMc4B9ByuryJihSKRApxIoU4kUKcSCFOpBAnUogTKcSJFOJECnEihTiRQpxI
+        IU6kECdSiBMpxIkU4kQKcSKFOJFCnEghTqQQJ1KIEynEiRTiRApxIoU4kUKcSCFOpBD3F+la63MOM+vs
+        dHkTBbrG+AFsiiic5uIIbQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="icons8-x-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-x-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPic.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pass Fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pass Fail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Task Completed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Task Completed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Male User (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male User (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Door Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Door Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

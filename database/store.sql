@@ -545,3 +545,106 @@ GO
 
 SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX
 FROM dbo.TAIXE 
+
+--lấy thông tin trưng bày cho sản phẩm -- tên sản phẩm, tên đôi tác, tên chi nhánh, tên loại hàng, giá bán, giá giảm
+CREATE PROC USP_GetInfoDisplayProduct @masp nvarchar(100)
+AS
+BEGIN
+	SELECT D.TenDT, 
+    FROM dbo.SANPHAM s, dbo.DOITAC d
+	WHERE s.MaSP=@masp AND s.MaDT=d.MaDT AND s.MaDT=cn.MaDT AND s.MaCN=cn.MaCN
+END
+GO
+
+--tạo đơn hàng mới
+CREATE OR ALTER PROC USP_InsertOrder @makh NVARCHAR(100), @tinhtrang NVARCHAR(100), @hinhthuc NVARCHAR(100), @phivc MONEY, @thoigian datetime
+AS
+BEGIN
+	--tìm đơn hàng có mã lớn nhất
+	DECLARE @max INT = 0
+	DECLARE @newOrderID NVARCHAR(100)
+	DECLARE @numberInId INT
+	DECLARE @newNumber INT
+	DECLARE @n INT
+	DECLARE @index INT = 1
+	DECLARE @id NVARCHAR(100)
+	SELECT @n=COUNT(*) FROM dbo.DONHANG
+		WHILE @index <= @n
+		BEGIN
+			--lay ma don hang
+			SELECT @id=dbo.DONHANG.MaDH
+			FROM dbo.DONHANG,  (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS OrderIndex, MaDH
+													FROM dbo.DONHANG ) as T
+			WHERE T.OrderIndex=@index AND dbo.DONHANG.MaDH = t.MaDH
+			
+			--lấy số từ mã người dùng
+			SELECT @numberInID=dbo.getNumber(@id)
+			IF (@numberInID > @max )
+			BEGIN
+				SET @max=@numberInID
+				SET @newNumber=@max+1 --tang gia tri len 1
+            END
+			SET @index=@index+1 --tang i
+		END
+		--tạo mã ddon hang mới
+		SET @newOrderID = 'DH' + CAST(@newNumber AS NVARCHAR(100))
+	--them don hang voi ma khach hang tuong ung
+	INSERT INTO DONHANG(MaDH, MaKH, TinhTrangDH,HinhThucThanhToan, PhiVC, ThoiGianDatHang) VALUES (@newOrderID, @makh, @tinhtrang, @hinhthuc, @phivc, @thoigian)
+
+	--trả về mã đơn hàng vừa tạo
+	SELECT * FROM dbo.DONHANG WHERE madh=@newOrderID
+END
+GO
+EXEC dbo.USP_InsertOrder @makh = N'KH5' -- nvarchar(100)
+
+--thêm chi tiết đơn hàng
+CREATE OR ALTER PROC USP_InsertDetailOrder @madh nvarchar(100), @masp nvarchar(100), @sl int, @gia money, @thanhtien money
+AS
+BEGIN TRAN
+	
+	--kiểm tra hàng tồn của sản phẩm
+	DECLARE @slton INT
+	SET @slton = (SELECT SoLuongTon FROM dbo.SANPHAM WHERE masp=@masp)
+	IF (@slton = 0)
+	BEGIN
+		RAISERROR(N'Sản phẩm hết hàng' ,15,1)
+		ROLLBACK
+		RETURN 
+    END
+	
+	--nếu số lượng tồn < số lượng cần mua
+	IF (@slton < @sl)
+	BEGIN
+		RAISERROR(N'Không đủ số lượng cung cấp',16,1)
+		ROLLBACK
+		return
+    END
+
+	--thêm 1 chi tiết đơn hàng 
+	INSERT INTO dbo.CT_DONHANG
+	(
+	    MaDH,
+	    MaSP,
+	    SoLuong,
+	    GiaTien,
+	    ThanhTien
+	)
+	VALUES
+	(   @madh,  -- MaDH - nvarchar(100)
+	    @masp,  -- MaSP - nvarchar(100)
+	    @sl,    -- SoLuong - int
+	    @gia, -- GiaTien - money
+	    @thanhtien  -- ThanhTien - money
+	    )
+
+	--cập nhật tổng tiền của đơn hàng
+	UPDATE dbo.DONHANG
+	SET TongTien = (SELECT SUM(THANHTIEN) FROM dbo.CT_DONHANG WHERE MaDH=@madh GROUP BY MaDH ) + PhiVC
+	FROM dbo.DONHANG
+	WHERE dbo.DONHANG.MaDH=@MADH
+COMMIT TRAN
+GO
+ EXEC USP_INSERTDETAILORDER 'DH1000','SP1',2,1000,2000
+
+
+

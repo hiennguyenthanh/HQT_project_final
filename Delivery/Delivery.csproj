@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>C:\DownloadApp\bunifu\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\DownloadApp\bunifu\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>C:\DownloadApp\bunifu\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
@@ -70,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\Global.cs" />
+    <Compile Include="DAO\ProductDAO.cs" />
+    <Compile Include="DAO\SupplierDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DriverDAO.cs" />
@@ -77,6 +83,38 @@
     <Compile Include="DTO\DetailedOrder.cs" />
     <Compile Include="DTO\Driver.cs" />
     <Compile Include="DTO\Order.cs" />
+    <Compile Include="DTO\Product.cs" />
+    <Compile Include="DTO\Supplier.cs" />
+    <Compile Include="Forms\Customer\fCustomerCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\fCustomerCart.Designer.cs">
+      <DependentUpon>fCustomerCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\fDisplayDetailedProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\fDisplayDetailedProduct.Designer.cs">
+      <DependentUpon>fDisplayDetailedProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\fDisplayProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\fDisplayProduct.Designer.cs">
+      <DependentUpon>fDisplayProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\fMainDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\fMainDisplay.Designer.cs">
+      <DependentUpon>fMainDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\MainCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\MainCustomer.Designer.cs">
+      <DependentUpon>MainCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fCreateNewAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +177,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Customer\fCustomerCart.resx">
+      <DependentUpon>fCustomerCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\fDisplayDetailedProduct.resx">
+      <DependentUpon>fDisplayDetailedProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\fDisplayProduct.resx">
+      <DependentUpon>fDisplayProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\fMainDisplay.resx">
+      <DependentUpon>fMainDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\MainCustomer.resx">
+      <DependentUpon>MainCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCreateNewAccount.resx">
       <DependentUpon>fCreateNewAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +274,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Color.txt" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Shopping Cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

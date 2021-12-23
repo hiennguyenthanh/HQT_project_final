@@ -135,6 +135,8 @@ namespace Delivery
 
         private void OpenUIUser(string id)
         {
+            DataSet data = new DataSet();
+            
             Form userForm;
             if (id.Contains("TX") && Role=="Tài xế")
             {
@@ -145,10 +147,29 @@ namespace Delivery
             }
             else
             {
-                if (id.Length != 0)
+                if (id.Contains("KH") && Role == "Khách hàng")
                 {
-                    MessageBox.Show("Đang cập nhật");
+                    this.Hide();
+                    userForm = new Forms.Customer.MainCustomer(id);
+                    userForm.ShowDialog();
+                    this.Dispose();
                 }
+                else
+                {
+                    if (id.Contains("QL"))
+                    {
+                        MessageBox.Show("Chào mừng quản lý");
+                    }
+                    else
+                    {
+                        if (id.Length != 0)
+                        {
+                            MessageBox.Show("Đang cập nhật");
+                        }
+                    }
+                    
+                }
+                
                 
             }
         }

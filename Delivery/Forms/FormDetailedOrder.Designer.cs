@@ -130,7 +130,7 @@ namespace Delivery.Forms
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(44, 112);
+            this.panel2.Location = new System.Drawing.Point(79, 112);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(767, 305);
             this.panel2.TabIndex = 2;
@@ -827,7 +827,7 @@ namespace Delivery.Forms
             this.panel4.Controls.Add(this.txtDOrderTime);
             this.panel4.Controls.Add(this.txtDShipFee);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(178, 0);
+            this.panel4.Location = new System.Drawing.Point(189, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(170, 305);
             this.panel4.TabIndex = 1;
@@ -1295,7 +1295,7 @@ namespace Delivery.Forms
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(178, 305);
+            this.panel3.Size = new System.Drawing.Size(189, 305);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -1380,7 +1380,7 @@ namespace Delivery.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(855, 503);
+            this.ClientSize = new System.Drawing.Size(925, 503);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

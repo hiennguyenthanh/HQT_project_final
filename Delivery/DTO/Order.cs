@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Delivery.DAO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -49,9 +50,9 @@ namespace Delivery.DTO
             this.Status = (string)row["TinhTrangDH"];
             this.OAddr= (string)row["DiaChiGiao"];
             this.CusID = (string)row["MaKH"];
-            if (row["MATX"]==DBNull.Value)
+            if (row["MATX"] == DBNull.Value)
             {
-                this.DriverID = null;
+                this.DriverID = "";
             }
             else
             {
@@ -65,6 +66,8 @@ namespace Delivery.DTO
             this.Total = (float)money1;
             this.TimeOrder = (DateTime)row["ThoiGianDatHang"];
         }
+
+       
         public string ID1 { get => ID; set => ID = value; }
         public string CusID1 { get => CusID; set => CusID = value; }
         public string DriverID1 { get => DriverID; set => DriverID = value; }

@@ -121,5 +121,27 @@ namespace Delivery.DAO
             return order;
 
         }
+        //insert đơn hàng mới đồng thời trả về mã đơn hàng vừa tạo
+        public string InsertOrder(string cusid, string status, string method, float fee, DateTime date)
+        {
+            string query = "USP_InsertOrder @makh , @tinhtrang , @hinhthuc , @phivc , @thoigian";
+            string newid = "";
+            DataTable r = DataProvider.Instance.ExecuteQuery1(query, new object[] { cusid, status,method,fee,date });
+            if (r.Rows.Count == 1)
+            {
+                foreach (DataRow item in r.Rows)
+                {
+                    newid = item["MADH"].ToString();
+                }
+            }
+
+            return newid;
+        }
+        public int InsertDetailOrder(string orderID, DetailedOrder d)
+        {
+            string query = "USP_InsertDetailOrder @madh , @masp , @sl , @gia , @thanhtien";
+            int r = DataProvider.Instance.ExecuteNonQuery(query, new object[] { orderID, d.ProductId1, d.Quality1, d.Price1, d.TotalPrice1 });
+            return r;
+        }
     }
 }

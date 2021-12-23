@@ -315,6 +315,7 @@ namespace Delivery.Forms
             this.Controls.Add(this.btnScrollNotDone);
             this.Controls.Add(this.gridNotDone);
             this.Name = "FormNotDone";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Danh sách đơn hàng chưa giao";
             this.Load += new System.EventHandler(this.FormNotDone_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridNotDone)).EndInit();
