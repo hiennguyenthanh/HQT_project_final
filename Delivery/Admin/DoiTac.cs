@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Delivery
+namespace Delivery.Admin
 {
-    public partial class NhanVien : Form
+    public partial class DoiTac : Form
     {
         SqlConnection connection;
         SqlCommand command;
@@ -22,18 +22,18 @@ namespace Delivery
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select* from NHANVIEN";
+            command.CommandText = "select* from DOITAC";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
-        public NhanVien()
+        public DoiTac()
         {
             InitializeComponent();
         }
 
-        private void NhanVien_Load(object sender, EventArgs e)
+        private void DoiTac_Load(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
             connection.Open();

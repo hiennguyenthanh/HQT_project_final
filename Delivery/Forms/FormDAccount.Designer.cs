@@ -191,7 +191,7 @@ namespace Delivery.Forms
             this.panelAccount.Controls.Add(this.panelAccEdt);
             this.panelAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAccount.Location = new System.Drawing.Point(0, 0);
-            this.panelAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAccount.Margin = new System.Windows.Forms.Padding(4);
             this.panelAccount.Name = "panelAccount";
             this.panelAccount.Size = new System.Drawing.Size(1179, 620);
             this.panelAccount.TabIndex = 0;
@@ -202,7 +202,7 @@ namespace Delivery.Forms
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1179, 619);
             this.panel1.TabIndex = 2;
@@ -215,7 +215,7 @@ namespace Delivery.Forms
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(116, 47);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1023, 521);
             this.panel2.TabIndex = 1;
@@ -230,7 +230,7 @@ namespace Delivery.Forms
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(488, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(535, 521);
             this.panel5.TabIndex = 2;
@@ -273,7 +273,7 @@ namespace Delivery.Forms
             this.btnDUpdateInfo.IdleIconRightImage = null;
             this.btnDUpdateInfo.IndicateFocus = false;
             this.btnDUpdateInfo.Location = new System.Drawing.Point(396, 4);
-            this.btnDUpdateInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDUpdateInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnDUpdateInfo.Name = "btnDUpdateInfo";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -338,7 +338,7 @@ namespace Delivery.Forms
             this.btnDChangePass.IdleIconRightImage = null;
             this.btnDChangePass.IndicateFocus = false;
             this.btnDChangePass.Location = new System.Drawing.Point(393, 338);
-            this.btnDChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDChangePass.Margin = new System.Windows.Forms.Padding(4);
             this.btnDChangePass.Name = "btnDChangePass";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
@@ -402,7 +402,7 @@ namespace Delivery.Forms
             this.txtDIncome.IdleIconRightImage = null;
             this.txtDIncome.IndicateFocus = false;
             this.txtDIncome.Location = new System.Drawing.Point(389, 480);
-            this.txtDIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDIncome.Margin = new System.Windows.Forms.Padding(4);
             this.txtDIncome.Name = "txtDIncome";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties5.BorderRadius = 3;
@@ -441,7 +441,7 @@ namespace Delivery.Forms
             this.panel7.Controls.Add(this.txtDNo);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(187, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(201, 521);
             this.panel7.TabIndex = 1;
@@ -484,7 +484,7 @@ namespace Delivery.Forms
             this.btnDCancelUpdate.IdleIconRightImage = null;
             this.btnDCancelUpdate.IndicateFocus = false;
             this.btnDCancelUpdate.Location = new System.Drawing.Point(28, 480);
-            this.btnDCancelUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDCancelUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnDCancelUpdate.Name = "btnDCancelUpdate";
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(166)))), ((int)(((byte)(196)))));
             stateProperties7.BorderRadius = 3;
@@ -541,7 +541,7 @@ namespace Delivery.Forms
             this.txtDPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDPass.Lines = new string[0];
             this.txtDPass.Location = new System.Drawing.Point(0, 366);
-            this.txtDPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtDPass.MaxLength = 32767;
             this.txtDPass.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDPass.Modified = false;
@@ -617,7 +617,7 @@ namespace Delivery.Forms
             this.txtDLogin.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDLogin.Lines = new string[0];
             this.txtDLogin.Location = new System.Drawing.Point(0, 316);
-            this.txtDLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtDLogin.MaxLength = 32767;
             this.txtDLogin.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDLogin.Modified = false;
@@ -693,7 +693,7 @@ namespace Delivery.Forms
             this.txtDCity.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDCity.Lines = new string[0];
             this.txtDCity.Location = new System.Drawing.Point(0, 191);
-            this.txtDCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtDCity.MaxLength = 32767;
             this.txtDCity.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDCity.Modified = false;
@@ -769,7 +769,7 @@ namespace Delivery.Forms
             this.txtDDistrict.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDDistrict.Lines = new string[0];
             this.txtDDistrict.Location = new System.Drawing.Point(0, 142);
-            this.txtDDistrict.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDDistrict.Margin = new System.Windows.Forms.Padding(4);
             this.txtDDistrict.MaxLength = 32767;
             this.txtDDistrict.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDDistrict.Modified = false;
@@ -845,7 +845,7 @@ namespace Delivery.Forms
             this.txtDWard.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDWard.Lines = new string[0];
             this.txtDWard.Location = new System.Drawing.Point(0, 92);
-            this.txtDWard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDWard.Margin = new System.Windows.Forms.Padding(4);
             this.txtDWard.MaxLength = 32767;
             this.txtDWard.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDWard.Modified = false;
@@ -921,7 +921,7 @@ namespace Delivery.Forms
             this.txtDStreet.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDStreet.Lines = new string[0];
             this.txtDStreet.Location = new System.Drawing.Point(0, 46);
-            this.txtDStreet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDStreet.Margin = new System.Windows.Forms.Padding(4);
             this.txtDStreet.MaxLength = 32767;
             this.txtDStreet.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDStreet.Modified = false;
@@ -997,7 +997,7 @@ namespace Delivery.Forms
             this.txtDNo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDNo.Lines = new string[0];
             this.txtDNo.Location = new System.Drawing.Point(0, 0);
-            this.txtDNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtDNo.MaxLength = 32767;
             this.txtDNo.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDNo.Modified = false;
@@ -1054,7 +1054,7 @@ namespace Delivery.Forms
             this.panel6.Controls.Add(this.label12);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(187, 521);
             this.panel6.TabIndex = 0;
@@ -1097,7 +1097,7 @@ namespace Delivery.Forms
             this.btnDSaveUpdate.IdleIconRightImage = null;
             this.btnDSaveUpdate.IndicateFocus = false;
             this.btnDSaveUpdate.Location = new System.Drawing.Point(24, 480);
-            this.btnDSaveUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDSaveUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnDSaveUpdate.Name = "btnDSaveUpdate";
             stateProperties37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties37.BorderRadius = 3;
@@ -1131,7 +1131,7 @@ namespace Delivery.Forms
             this.panel8.Controls.Add(this.label17);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 225);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(187, 169);
             this.panel8.TabIndex = 6;
@@ -1246,7 +1246,7 @@ namespace Delivery.Forms
             this.panel4.Controls.Add(this.txtDId);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(187, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(201, 521);
             this.panel4.TabIndex = 1;
@@ -1281,7 +1281,7 @@ namespace Delivery.Forms
             this.txtDBank.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDBank.Lines = new string[0];
             this.txtDBank.Location = new System.Drawing.Point(0, 437);
-            this.txtDBank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDBank.Margin = new System.Windows.Forms.Padding(4);
             this.txtDBank.MaxLength = 32767;
             this.txtDBank.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDBank.Modified = false;
@@ -1357,7 +1357,7 @@ namespace Delivery.Forms
             this.txtDEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDEmail.Lines = new string[0];
             this.txtDEmail.Location = new System.Drawing.Point(0, 388);
-            this.txtDEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtDEmail.MaxLength = 32767;
             this.txtDEmail.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDEmail.Modified = false;
@@ -1433,7 +1433,7 @@ namespace Delivery.Forms
             this.txtDArea.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDArea.Lines = new string[0];
             this.txtDArea.Location = new System.Drawing.Point(0, 338);
-            this.txtDArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDArea.Margin = new System.Windows.Forms.Padding(4);
             this.txtDArea.MaxLength = 32767;
             this.txtDArea.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDArea.Modified = false;
@@ -1509,7 +1509,7 @@ namespace Delivery.Forms
             this.txtDMotor.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDMotor.Lines = new string[0];
             this.txtDMotor.Location = new System.Drawing.Point(0, 289);
-            this.txtDMotor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDMotor.Margin = new System.Windows.Forms.Padding(4);
             this.txtDMotor.MaxLength = 32767;
             this.txtDMotor.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDMotor.Modified = false;
@@ -1585,7 +1585,7 @@ namespace Delivery.Forms
             this.txtDPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDPhone.Lines = new string[0];
             this.txtDPhone.Location = new System.Drawing.Point(0, 245);
-            this.txtDPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtDPhone.MaxLength = 32767;
             this.txtDPhone.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDPhone.Modified = false;
@@ -1661,7 +1661,7 @@ namespace Delivery.Forms
             this.txtDDob.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDDob.Lines = new string[0];
             this.txtDDob.Location = new System.Drawing.Point(0, 191);
-            this.txtDDob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDDob.Margin = new System.Windows.Forms.Padding(4);
             this.txtDDob.MaxLength = 32767;
             this.txtDDob.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDDob.Modified = false;
@@ -1737,7 +1737,7 @@ namespace Delivery.Forms
             this.txtDGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDGender.Lines = new string[0];
             this.txtDGender.Location = new System.Drawing.Point(0, 142);
-            this.txtDGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDGender.Margin = new System.Windows.Forms.Padding(4);
             this.txtDGender.MaxLength = 32767;
             this.txtDGender.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDGender.Modified = false;
@@ -1813,7 +1813,7 @@ namespace Delivery.Forms
             this.txtDCitizenID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDCitizenID.Lines = new string[0];
             this.txtDCitizenID.Location = new System.Drawing.Point(-11, 92);
-            this.txtDCitizenID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDCitizenID.Margin = new System.Windows.Forms.Padding(4);
             this.txtDCitizenID.MaxLength = 32767;
             this.txtDCitizenID.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDCitizenID.Modified = false;
@@ -1889,7 +1889,7 @@ namespace Delivery.Forms
             this.txtDName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDName.Lines = new string[0];
             this.txtDName.Location = new System.Drawing.Point(0, 46);
-            this.txtDName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDName.MaxLength = 32767;
             this.txtDName.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDName.Modified = false;
@@ -1966,7 +1966,7 @@ namespace Delivery.Forms
             this.txtDId.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDId.Lines = new string[0];
             this.txtDId.Location = new System.Drawing.Point(-11, 0);
-            this.txtDId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDId.Margin = new System.Windows.Forms.Padding(4);
             this.txtDId.MaxLength = 32767;
             this.txtDId.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDId.Modified = false;
@@ -2027,7 +2027,7 @@ namespace Delivery.Forms
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(187, 521);
             this.panel3.TabIndex = 0;
@@ -2177,7 +2177,7 @@ namespace Delivery.Forms
             this.panelAcctxt.Controls.Add(this.label1);
             this.panelAcctxt.Controls.Add(this.lblDId);
             this.panelAcctxt.Location = new System.Drawing.Point(69, 47);
-            this.panelAcctxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAcctxt.Margin = new System.Windows.Forms.Padding(4);
             this.panelAcctxt.Name = "panelAcctxt";
             this.panelAcctxt.Size = new System.Drawing.Size(160, 572);
             this.panelAcctxt.TabIndex = 1;
@@ -2215,7 +2215,7 @@ namespace Delivery.Forms
             // 
             this.panelAccEdt.Controls.Add(this.bunifuTextBox3);
             this.panelAccEdt.Location = new System.Drawing.Point(237, 47);
-            this.panelAccEdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAccEdt.Margin = new System.Windows.Forms.Padding(4);
             this.panelAccEdt.Name = "panelAccEdt";
             this.panelAccEdt.Size = new System.Drawing.Size(247, 576);
             this.panelAccEdt.TabIndex = 0;
@@ -2302,7 +2302,7 @@ namespace Delivery.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(1179, 620);
             this.Controls.Add(this.panelAccount);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(994, 543);
             this.Name = "FormDAccount";
             this.Text = "Thông tin tài khoản";

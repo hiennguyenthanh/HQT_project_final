@@ -93,7 +93,8 @@ namespace Delivery.Forms
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridNotDone.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridNotDone.EnableHeadersVisualStyles = false;
-            this.gridNotDone.Location = new System.Drawing.Point(11, 65);
+            this.gridNotDone.Location = new System.Drawing.Point(15, 80);
+            this.gridNotDone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridNotDone.Name = "gridNotDone";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(98)))), ((int)(((byte)(36)))));
@@ -108,7 +109,7 @@ namespace Delivery.Forms
             this.gridNotDone.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridNotDone.RowTemplate.Height = 40;
             this.gridNotDone.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridNotDone.Size = new System.Drawing.Size(804, 291);
+            this.gridNotDone.Size = new System.Drawing.Size(1072, 358);
             this.gridNotDone.TabIndex = 0;
             this.gridNotDone.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridNotDone_CellContentClick);
             this.gridNotDone.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridNotDone_CellContentDoubleClick);
@@ -131,6 +132,7 @@ namespace Delivery.Forms
             // 
             this.Column3.FillWeight = 152.2843F;
             this.Column3.HeaderText = "Địa chỉ";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // btnScrollNotDone
@@ -154,7 +156,8 @@ namespace Delivery.Forms
             this.btnScrollNotDone.BorderThickness = 1;
             this.btnScrollNotDone.DurationBeforeShrink = 2000;
             this.btnScrollNotDone.LargeChange = 10;
-            this.btnScrollNotDone.Location = new System.Drawing.Point(824, 101);
+            this.btnScrollNotDone.Location = new System.Drawing.Point(1099, 124);
+            this.btnScrollNotDone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnScrollNotDone.Maximum = 100;
             this.btnScrollNotDone.Minimum = 0;
             this.btnScrollNotDone.MinimumThumbLength = 18;
@@ -165,11 +168,11 @@ namespace Delivery.Forms
             this.btnScrollNotDone.ScrollBarBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
             this.btnScrollNotDone.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
             this.btnScrollNotDone.ShrinkSizeLimit = 3;
-            this.btnScrollNotDone.Size = new System.Drawing.Size(19, 255);
+            this.btnScrollNotDone.Size = new System.Drawing.Size(25, 314);
             this.btnScrollNotDone.SmallChange = 1;
             this.btnScrollNotDone.TabIndex = 1;
             this.btnScrollNotDone.ThumbColor = System.Drawing.Color.Gray;
-            this.btnScrollNotDone.ThumbLength = 25;
+            this.btnScrollNotDone.ThumbLength = 30;
             this.btnScrollNotDone.ThumbMargin = 1;
             this.btnScrollNotDone.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.btnScrollNotDone.Value = 0;
@@ -181,9 +184,10 @@ namespace Delivery.Forms
             this.lblArea.AutoSize = true;
             this.lblArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.lblArea.Location = new System.Drawing.Point(523, 442);
+            this.lblArea.Location = new System.Drawing.Point(697, 544);
+            this.lblArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(96, 25);
+            this.lblArea.Size = new System.Drawing.Size(120, 31);
             this.lblArea.TabIndex = 2;
             this.lblArea.Text = "Khu vực:";
             this.lblArea.Click += new System.EventHandler(this.lblArea_Click);
@@ -194,9 +198,10 @@ namespace Delivery.Forms
             this.btnArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
             this.btnArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(67)))), ((int)(((byte)(30)))));
-            this.btnArea.Location = new System.Drawing.Point(625, 434);
+            this.btnArea.Location = new System.Drawing.Point(833, 534);
+            this.btnArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnArea.Name = "btnArea";
-            this.btnArea.Size = new System.Drawing.Size(190, 40);
+            this.btnArea.Size = new System.Drawing.Size(253, 49);
             this.btnArea.TabIndex = 3;
             this.btnArea.Text = "Phường";
             this.btnArea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,9 +213,10 @@ namespace Delivery.Forms
             this.panel1.Controls.Add(this.btnDUpdateOrdeStatus);
             this.panel1.Controls.Add(this.cbOrderStatus);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(30, 417);
+            this.panel1.Location = new System.Drawing.Point(40, 513);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 57);
+            this.panel1.Size = new System.Drawing.Size(480, 70);
             this.panel1.TabIndex = 4;
             // 
             // btnDUpdateOrdeStatus
@@ -252,7 +258,8 @@ namespace Delivery.Forms
             this.btnDUpdateOrdeStatus.IdleIconLeftImage = null;
             this.btnDUpdateOrdeStatus.IdleIconRightImage = null;
             this.btnDUpdateOrdeStatus.IndicateFocus = false;
-            this.btnDUpdateOrdeStatus.Location = new System.Drawing.Point(252, 17);
+            this.btnDUpdateOrdeStatus.Location = new System.Drawing.Point(336, 21);
+            this.btnDUpdateOrdeStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDUpdateOrdeStatus.Name = "btnDUpdateOrdeStatus";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -272,7 +279,7 @@ namespace Delivery.Forms
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.btnDUpdateOrdeStatus.OnPressedState = stateProperties2;
-            this.btnDUpdateOrdeStatus.Size = new System.Drawing.Size(106, 33);
+            this.btnDUpdateOrdeStatus.Size = new System.Drawing.Size(141, 41);
             this.btnDUpdateOrdeStatus.TabIndex = 11;
             this.btnDUpdateOrdeStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDUpdateOrdeStatus.TextMarginLeft = 0;
@@ -287,10 +294,11 @@ namespace Delivery.Forms
             this.cbOrderStatus.DropDownHeight = 200;
             this.cbOrderStatus.FormattingEnabled = true;
             this.cbOrderStatus.IntegralHeight = false;
-            this.cbOrderStatus.ItemHeight = 13;
-            this.cbOrderStatus.Location = new System.Drawing.Point(0, 25);
+            this.cbOrderStatus.ItemHeight = 16;
+            this.cbOrderStatus.Location = new System.Drawing.Point(0, 32);
+            this.cbOrderStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbOrderStatus.Name = "cbOrderStatus";
-            this.cbOrderStatus.Size = new System.Drawing.Size(246, 21);
+            this.cbOrderStatus.Size = new System.Drawing.Size(327, 24);
             this.cbOrderStatus.TabIndex = 1;
             // 
             // label1
@@ -299,21 +307,23 @@ namespace Delivery.Forms
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 25);
+            this.label1.Size = new System.Drawing.Size(240, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tình trạng đơn hàng:";
             // 
             // FormNotDone
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 503);
+            this.ClientSize = new System.Drawing.Size(1140, 619);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnArea);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.btnScrollNotDone);
             this.Controls.Add(this.gridNotDone);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormNotDone";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Danh sách đơn hàng chưa giao";

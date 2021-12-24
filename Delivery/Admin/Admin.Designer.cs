@@ -1,5 +1,5 @@
 ﻿
-namespace Delivery
+namespace Delivery.Admin
 {
     partial class Admin
     {
@@ -39,19 +39,19 @@ namespace Delivery
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 104);
+            this.button1.Location = new System.Drawing.Point(21, 76);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 43);
+            this.button1.Size = new System.Drawing.Size(250, 42);
             this.button1.TabIndex = 0;
-            this.button1.Text = " Quản lý nhân viên";
+            this.button1.Text = "Quản lý nhân viên";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(35, 169);
+            this.button2.Location = new System.Drawing.Point(21, 140);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 43);
+            this.button2.Size = new System.Drawing.Size(250, 42);
             this.button2.TabIndex = 1;
             this.button2.Text = "Quản lý đối tác";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace Delivery
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(35, 232);
+            this.button3.Location = new System.Drawing.Point(21, 204);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(212, 43);
+            this.button3.Size = new System.Drawing.Size(250, 42);
             this.button3.TabIndex = 2;
             this.button3.Text = "Quản lý tài xế";
             this.button3.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@ namespace Delivery
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(35, 291);
+            this.button4.Location = new System.Drawing.Point(21, 265);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(212, 43);
+            this.button4.Size = new System.Drawing.Size(250, 42);
             this.button4.TabIndex = 3;
             this.button4.Text = "Quản lý khách hàng";
             this.button4.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@ namespace Delivery
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(35, 350);
+            this.button5.Location = new System.Drawing.Point(21, 330);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(212, 40);
+            this.button5.Size = new System.Drawing.Size(250, 42);
             this.button5.TabIndex = 4;
             this.button5.Text = "Quản lý hợp đồng";
             this.button5.UseVisualStyleBackColor = true;
@@ -89,18 +89,18 @@ namespace Delivery
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(35, 409);
+            this.button6.Location = new System.Drawing.Point(21, 396);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(212, 43);
+            this.button6.Size = new System.Drawing.Size(250, 42);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Khóa và kích hoạt tài khoản";
+            this.button6.Text = "Quản lý tài khoản";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 464);
+            this.ClientSize = new System.Drawing.Size(763, 524);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

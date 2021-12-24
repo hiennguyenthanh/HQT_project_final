@@ -1,5 +1,5 @@
 ﻿
-namespace Delivery
+namespace Delivery.Admin
 {
     partial class DoiTac
     {
@@ -37,18 +37,18 @@ namespace Delivery
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 149);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 145);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 289);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 293);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(264, 58);
+            this.label1.Location = new System.Drawing.Point(268, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 32);
             this.label1.TabIndex = 1;

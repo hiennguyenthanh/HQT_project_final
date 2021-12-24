@@ -9,10 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Delivery
+namespace Delivery.Admin
 {
-
-    public partial class KhachHang : Form
+    public partial class HopDong : Form
     {
         SqlConnection connection;
         SqlCommand command;
@@ -23,18 +22,18 @@ namespace Delivery
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select* from KHACHHANG";
+            command.CommandText = "select* from HOPDONG";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
-        public KhachHang()
+        public HopDong()
         {
             InitializeComponent();
         }
-        //
-        private void KhachHang_Load(object sender, EventArgs e)
+
+        private void HopDong_Load(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
             connection.Open();

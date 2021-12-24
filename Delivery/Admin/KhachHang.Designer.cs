@@ -1,7 +1,7 @@
 ﻿
-namespace Delivery
+namespace Delivery.Admin
 {
-    partial class HopDong
+    partial class KhachHang
     {
         /// <summary>
         /// Required designer variable.
@@ -37,33 +37,33 @@ namespace Delivery
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 160);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 278);
+            this.dataGridView1.Size = new System.Drawing.Size(775, 278);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(262, 69);
+            this.label1.Location = new System.Drawing.Point(249, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 32);
+            this.label1.Size = new System.Drawing.Size(285, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Quản lý hợp đồng";
+            this.label1.Text = "Quản lý khách hàng";
             // 
-            // HopDong
+            // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "HopDong";
-            this.Text = "HopDong";
-            this.Load += new System.EventHandler(this.HopDong_Load);
+            this.Name = "KhachHang";
+            this.Text = "KhachHang";
+            this.Load += new System.EventHandler(this.KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -355,7 +355,7 @@ namespace Delivery.Forms
             this.txtDOrderCity.SelectionLength = 0;
             this.txtDOrderCity.SelectionStart = 0;
             this.txtDOrderCity.ShortcutsEnabled = true;
-            this.txtDOrderCity.Size = new System.Drawing.Size(151, 29);
+            this.txtDOrderCity.Size = new System.Drawing.Size(151, 33);
             this.txtDOrderCity.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderCity.TabIndex = 6;
             this.txtDOrderCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -430,7 +430,7 @@ namespace Delivery.Forms
             this.txtDOrderStreet.SelectionLength = 0;
             this.txtDOrderStreet.SelectionStart = 0;
             this.txtDOrderStreet.ShortcutsEnabled = true;
-            this.txtDOrderStreet.Size = new System.Drawing.Size(151, 29);
+            this.txtDOrderStreet.Size = new System.Drawing.Size(151, 33);
             this.txtDOrderStreet.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderStreet.TabIndex = 5;
             this.txtDOrderStreet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -505,7 +505,7 @@ namespace Delivery.Forms
             this.txtDOrderWard.SelectionLength = 0;
             this.txtDOrderWard.SelectionStart = 0;
             this.txtDOrderWard.ShortcutsEnabled = true;
-            this.txtDOrderWard.Size = new System.Drawing.Size(151, 29);
+            this.txtDOrderWard.Size = new System.Drawing.Size(151, 33);
             this.txtDOrderWard.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderWard.TabIndex = 4;
             this.txtDOrderWard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -580,7 +580,7 @@ namespace Delivery.Forms
             this.txtDOrderDistrict.SelectionLength = 0;
             this.txtDOrderDistrict.SelectionStart = 0;
             this.txtDOrderDistrict.ShortcutsEnabled = true;
-            this.txtDOrderDistrict.Size = new System.Drawing.Size(151, 29);
+            this.txtDOrderDistrict.Size = new System.Drawing.Size(151, 33);
             this.txtDOrderDistrict.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderDistrict.TabIndex = 3;
             this.txtDOrderDistrict.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -655,7 +655,7 @@ namespace Delivery.Forms
             this.txtDOrderNo.SelectionLength = 0;
             this.txtDOrderNo.SelectionStart = 0;
             this.txtDOrderNo.ShortcutsEnabled = true;
-            this.txtDOrderNo.Size = new System.Drawing.Size(151, 29);
+            this.txtDOrderNo.Size = new System.Drawing.Size(151, 33);
             this.txtDOrderNo.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderNo.TabIndex = 2;
             this.txtDOrderNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -730,7 +730,7 @@ namespace Delivery.Forms
             this.txtDNo.SelectionLength = 0;
             this.txtDNo.SelectionStart = 0;
             this.txtDNo.ShortcutsEnabled = true;
-            this.txtDNo.Size = new System.Drawing.Size(151, 29);
+            this.txtDNo.Size = new System.Drawing.Size(151, 33);
             this.txtDNo.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDNo.TabIndex = 1;
             this.txtDNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -760,10 +760,10 @@ namespace Delivery.Forms
             this.label16.Dock = System.Windows.Forms.DockStyle.Top;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label16.Location = new System.Drawing.Point(0, 140);
+            this.label16.Location = new System.Drawing.Point(0, 160);
             this.label16.Name = "label16";
             this.label16.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label16.Size = new System.Drawing.Size(79, 40);
+            this.label16.Size = new System.Drawing.Size(103, 45);
             this.label16.TabIndex = 5;
             this.label16.Text = "Thành phố";
             // 
@@ -773,10 +773,10 @@ namespace Delivery.Forms
             this.label15.Dock = System.Windows.Forms.DockStyle.Top;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label15.Location = new System.Drawing.Point(0, 100);
+            this.label15.Location = new System.Drawing.Point(0, 115);
             this.label15.Name = "label15";
             this.label15.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label15.Size = new System.Drawing.Size(44, 40);
+            this.label15.Size = new System.Drawing.Size(58, 45);
             this.label15.TabIndex = 4;
             this.label15.Text = "Quận";
             // 
@@ -786,10 +786,10 @@ namespace Delivery.Forms
             this.label14.Dock = System.Windows.Forms.DockStyle.Top;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(0, 60);
+            this.label14.Location = new System.Drawing.Point(0, 70);
             this.label14.Name = "label14";
             this.label14.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label14.Size = new System.Drawing.Size(60, 40);
+            this.label14.Size = new System.Drawing.Size(78, 45);
             this.label14.TabIndex = 3;
             this.label14.Text = "Phường";
             // 
@@ -799,10 +799,10 @@ namespace Delivery.Forms
             this.label13.Dock = System.Windows.Forms.DockStyle.Top;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(0, 20);
+            this.label13.Location = new System.Drawing.Point(0, 25);
             this.label13.Name = "label13";
             this.label13.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label13.Size = new System.Drawing.Size(55, 40);
+            this.label13.Size = new System.Drawing.Size(69, 45);
             this.label13.TabIndex = 2;
             this.label13.Text = "Đường";
             // 
@@ -814,7 +814,7 @@ namespace Delivery.Forms
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
             this.label12.Location = new System.Drawing.Point(0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 20);
+            this.label12.Size = new System.Drawing.Size(70, 25);
             this.label12.TabIndex = 1;
             this.label12.Text = "Số nhà";
             // 
@@ -897,7 +897,7 @@ namespace Delivery.Forms
             this.txtDReceivedFee.SelectionLength = 0;
             this.txtDReceivedFee.SelectionStart = 0;
             this.txtDReceivedFee.ShortcutsEnabled = true;
-            this.txtDReceivedFee.Size = new System.Drawing.Size(159, 29);
+            this.txtDReceivedFee.Size = new System.Drawing.Size(159, 33);
             this.txtDReceivedFee.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDReceivedFee.TabIndex = 5;
             this.txtDReceivedFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -972,7 +972,7 @@ namespace Delivery.Forms
             this.txtDMethod.SelectionLength = 0;
             this.txtDMethod.SelectionStart = 0;
             this.txtDMethod.ShortcutsEnabled = true;
-            this.txtDMethod.Size = new System.Drawing.Size(158, 29);
+            this.txtDMethod.Size = new System.Drawing.Size(158, 33);
             this.txtDMethod.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDMethod.TabIndex = 4;
             this.txtDMethod.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1048,7 +1048,7 @@ namespace Delivery.Forms
             this.txtDCusID.SelectionLength = 0;
             this.txtDCusID.SelectionStart = 0;
             this.txtDCusID.ShortcutsEnabled = true;
-            this.txtDCusID.Size = new System.Drawing.Size(159, 29);
+            this.txtDCusID.Size = new System.Drawing.Size(159, 33);
             this.txtDCusID.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDCusID.TabIndex = 3;
             this.txtDCusID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1123,7 +1123,7 @@ namespace Delivery.Forms
             this.txtDOrderID.SelectionLength = 0;
             this.txtDOrderID.SelectionStart = 0;
             this.txtDOrderID.ShortcutsEnabled = true;
-            this.txtDOrderID.Size = new System.Drawing.Size(159, 29);
+            this.txtDOrderID.Size = new System.Drawing.Size(159, 33);
             this.txtDOrderID.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderID.TabIndex = 2;
             this.txtDOrderID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1198,7 +1198,7 @@ namespace Delivery.Forms
             this.txtDOrderTime.SelectionLength = 0;
             this.txtDOrderTime.SelectionStart = 0;
             this.txtDOrderTime.ShortcutsEnabled = true;
-            this.txtDOrderTime.Size = new System.Drawing.Size(159, 29);
+            this.txtDOrderTime.Size = new System.Drawing.Size(159, 33);
             this.txtDOrderTime.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDOrderTime.TabIndex = 1;
             this.txtDOrderTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1273,7 +1273,7 @@ namespace Delivery.Forms
             this.txtDShipFee.SelectionLength = 0;
             this.txtDShipFee.SelectionStart = 0;
             this.txtDShipFee.ShortcutsEnabled = true;
-            this.txtDShipFee.Size = new System.Drawing.Size(159, 29);
+            this.txtDShipFee.Size = new System.Drawing.Size(159, 33);
             this.txtDShipFee.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDShipFee.TabIndex = 0;
             this.txtDShipFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1304,10 +1304,10 @@ namespace Delivery.Forms
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(0, 180);
+            this.label1.Location = new System.Drawing.Point(0, 205);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label1.Size = new System.Drawing.Size(145, 40);
+            this.label1.Size = new System.Drawing.Size(187, 45);
             this.label1.TabIndex = 5;
             this.label1.Text = "Phí được nhận (30%)";
             // 
@@ -1317,10 +1317,10 @@ namespace Delivery.Forms
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(0, 140);
+            this.label6.Location = new System.Drawing.Point(0, 160);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label6.Size = new System.Drawing.Size(134, 40);
+            this.label6.Size = new System.Drawing.Size(171, 45);
             this.label6.TabIndex = 4;
             this.label6.Text = "Thời gian đặt hàng";
             // 
@@ -1330,10 +1330,10 @@ namespace Delivery.Forms
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(0, 100);
+            this.label5.Location = new System.Drawing.Point(0, 115);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label5.Size = new System.Drawing.Size(173, 40);
+            this.label5.Size = new System.Drawing.Size(226, 45);
             this.label5.TabIndex = 3;
             this.label5.Text = "Phí vận chuyển đơn hàng";
             // 
@@ -1343,10 +1343,10 @@ namespace Delivery.Forms
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(0, 60);
+            this.label4.Location = new System.Drawing.Point(0, 70);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label4.Size = new System.Drawing.Size(148, 40);
+            this.label4.Size = new System.Drawing.Size(191, 45);
             this.label4.TabIndex = 2;
             this.label4.Text = "Hình thức thanh toán";
             // 
@@ -1356,10 +1356,10 @@ namespace Delivery.Forms
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(0, 20);
+            this.label3.Location = new System.Drawing.Point(0, 25);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label3.Size = new System.Drawing.Size(109, 40);
+            this.label3.Size = new System.Drawing.Size(142, 45);
             this.label3.TabIndex = 1;
             this.label3.Text = "Mã khách hàng";
             // 
@@ -1371,13 +1371,13 @@ namespace Delivery.Forms
             this.lnb.ForeColor = System.Drawing.Color.Gainsboro;
             this.lnb.Location = new System.Drawing.Point(0, 0);
             this.lnb.Name = "lnb";
-            this.lnb.Size = new System.Drawing.Size(97, 20);
+            this.lnb.Size = new System.Drawing.Size(125, 25);
             this.lnb.TabIndex = 0;
             this.lnb.Text = "Mã đơn hàng";
             // 
             // FormDetailedOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(925, 503);

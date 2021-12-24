@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Delivery
+namespace Delivery.Admin
 {
     public partial class TaiXe : Form
     {
@@ -18,7 +18,6 @@ namespace Delivery
         string str = @"Data Source=LAPTOP-2DSFN631\HUYNHTHANHMY;Initial Catalog=QLHD;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-
         void loadData()
         {
             command = connection.CreateCommand();
@@ -28,7 +27,6 @@ namespace Delivery
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
-
         public TaiXe()
         {
             InitializeComponent();
