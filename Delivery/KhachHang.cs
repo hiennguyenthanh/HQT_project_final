@@ -33,7 +33,7 @@ namespace Delivery
         {
             InitializeComponent();
         }
-
+        //
         private void KhachHang_Load(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
