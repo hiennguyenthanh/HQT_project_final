@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace Delivery
+{
+    public partial class NhanVien : Form
+    {
+        SqlConnection connection;
+        SqlCommand command;
+        string str = @"Data Source=LAPTOP-2DSFN631\HUYNHTHANHMY;Initial Catalog=QLHD;Integrated Security=True";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
+
+        void loadData()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select* from NHANVIEN";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
+        public NhanVien()
+        {
+            InitializeComponent();
+        }
+
+        private void NhanVien_Load(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(str);
+            connection.Open();
+            loadData();
+        }
+    }
+}

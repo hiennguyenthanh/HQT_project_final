@@ -20,7 +20,7 @@ namespace Delivery
             Application.SetCompatibleTextRenderingDefault(false);
 
             ///Application.Run(new Forms.Customer.MainCustomer("KH7"));
-            Application.Run(new fLogin());
+            Application.Run(new Admin());
         }
     }
 }

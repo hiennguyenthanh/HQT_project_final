@@ -191,8 +191,9 @@ namespace Delivery.Forms
             this.panelAccount.Controls.Add(this.panelAccEdt);
             this.panelAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAccount.Location = new System.Drawing.Point(0, 0);
+            this.panelAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelAccount.Name = "panelAccount";
-            this.panelAccount.Size = new System.Drawing.Size(884, 504);
+            this.panelAccount.Size = new System.Drawing.Size(1179, 620);
             this.panelAccount.TabIndex = 0;
             // 
             // panel1
@@ -201,8 +202,9 @@ namespace Delivery.Forms
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 503);
+            this.panel1.Size = new System.Drawing.Size(1179, 619);
             this.panel1.TabIndex = 2;
             // 
             // panel2
@@ -212,9 +214,10 @@ namespace Delivery.Forms
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(87, 38);
+            this.panel2.Location = new System.Drawing.Point(116, 47);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(767, 423);
+            this.panel2.Size = new System.Drawing.Size(1023, 521);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -226,9 +229,10 @@ namespace Delivery.Forms
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(366, 0);
+            this.panel5.Location = new System.Drawing.Point(488, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(401, 423);
+            this.panel5.Size = new System.Drawing.Size(535, 521);
             this.panel5.TabIndex = 2;
             // 
             // btnDUpdateInfo
@@ -268,7 +272,8 @@ namespace Delivery.Forms
             this.btnDUpdateInfo.IdleIconLeftImage = null;
             this.btnDUpdateInfo.IdleIconRightImage = null;
             this.btnDUpdateInfo.IndicateFocus = false;
-            this.btnDUpdateInfo.Location = new System.Drawing.Point(297, 3);
+            this.btnDUpdateInfo.Location = new System.Drawing.Point(396, 4);
+            this.btnDUpdateInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDUpdateInfo.Name = "btnDUpdateInfo";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -288,7 +293,7 @@ namespace Delivery.Forms
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.btnDUpdateInfo.OnPressedState = stateProperties2;
-            this.btnDUpdateInfo.Size = new System.Drawing.Size(106, 30);
+            this.btnDUpdateInfo.Size = new System.Drawing.Size(141, 37);
             this.btnDUpdateInfo.TabIndex = 9;
             this.btnDUpdateInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDUpdateInfo.TextMarginLeft = 0;
@@ -332,7 +337,8 @@ namespace Delivery.Forms
             this.btnDChangePass.IdleIconLeftImage = null;
             this.btnDChangePass.IdleIconRightImage = null;
             this.btnDChangePass.IndicateFocus = false;
-            this.btnDChangePass.Location = new System.Drawing.Point(295, 275);
+            this.btnDChangePass.Location = new System.Drawing.Point(393, 338);
+            this.btnDChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDChangePass.Name = "btnDChangePass";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
@@ -352,7 +358,7 @@ namespace Delivery.Forms
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.btnDChangePass.OnPressedState = stateProperties4;
-            this.btnDChangePass.Size = new System.Drawing.Size(106, 30);
+            this.btnDChangePass.Size = new System.Drawing.Size(141, 37);
             this.btnDChangePass.TabIndex = 8;
             this.btnDChangePass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDChangePass.TextMarginLeft = 0;
@@ -395,7 +401,8 @@ namespace Delivery.Forms
             this.txtDIncome.IdleIconLeftImage = null;
             this.txtDIncome.IdleIconRightImage = null;
             this.txtDIncome.IndicateFocus = false;
-            this.txtDIncome.Location = new System.Drawing.Point(292, 390);
+            this.txtDIncome.Location = new System.Drawing.Point(389, 480);
+            this.txtDIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDIncome.Name = "txtDIncome";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties5.BorderRadius = 3;
@@ -415,7 +422,7 @@ namespace Delivery.Forms
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.txtDIncome.OnPressedState = stateProperties6;
-            this.txtDIncome.Size = new System.Drawing.Size(106, 30);
+            this.txtDIncome.Size = new System.Drawing.Size(141, 37);
             this.txtDIncome.TabIndex = 10;
             this.txtDIncome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.txtDIncome.TextMarginLeft = 0;
@@ -433,9 +440,10 @@ namespace Delivery.Forms
             this.panel7.Controls.Add(this.txtDStreet);
             this.panel7.Controls.Add(this.txtDNo);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(140, 0);
+            this.panel7.Location = new System.Drawing.Point(187, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(151, 423);
+            this.panel7.Size = new System.Drawing.Size(201, 521);
             this.panel7.TabIndex = 1;
             // 
             // btnDCancelUpdate
@@ -475,7 +483,8 @@ namespace Delivery.Forms
             this.btnDCancelUpdate.IdleIconLeftImage = null;
             this.btnDCancelUpdate.IdleIconRightImage = null;
             this.btnDCancelUpdate.IndicateFocus = false;
-            this.btnDCancelUpdate.Location = new System.Drawing.Point(21, 390);
+            this.btnDCancelUpdate.Location = new System.Drawing.Point(28, 480);
+            this.btnDCancelUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDCancelUpdate.Name = "btnDCancelUpdate";
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(166)))), ((int)(((byte)(196)))));
             stateProperties7.BorderRadius = 3;
@@ -495,7 +504,7 @@ namespace Delivery.Forms
             stateProperties8.IconLeftImage = null;
             stateProperties8.IconRightImage = null;
             this.btnDCancelUpdate.OnPressedState = stateProperties8;
-            this.btnDCancelUpdate.Size = new System.Drawing.Size(106, 30);
+            this.btnDCancelUpdate.Size = new System.Drawing.Size(141, 37);
             this.btnDCancelUpdate.TabIndex = 11;
             this.btnDCancelUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDCancelUpdate.TextMarginLeft = 0;
@@ -531,9 +540,10 @@ namespace Delivery.Forms
             this.txtDPass.IconRight = null;
             this.txtDPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDPass.Lines = new string[0];
-            this.txtDPass.Location = new System.Drawing.Point(0, 297);
+            this.txtDPass.Location = new System.Drawing.Point(0, 366);
+            this.txtDPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDPass.MaxLength = 32767;
-            this.txtDPass.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDPass.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDPass.Modified = false;
             this.txtDPass.Multiline = false;
             this.txtDPass.Name = "txtDPass";
@@ -566,7 +576,7 @@ namespace Delivery.Forms
             this.txtDPass.SelectionLength = 0;
             this.txtDPass.SelectionStart = 0;
             this.txtDPass.ShortcutsEnabled = true;
-            this.txtDPass.Size = new System.Drawing.Size(151, 25);
+            this.txtDPass.Size = new System.Drawing.Size(201, 31);
             this.txtDPass.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDPass.TabIndex = 7;
             this.txtDPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -606,9 +616,10 @@ namespace Delivery.Forms
             this.txtDLogin.IconRight = null;
             this.txtDLogin.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDLogin.Lines = new string[0];
-            this.txtDLogin.Location = new System.Drawing.Point(0, 257);
+            this.txtDLogin.Location = new System.Drawing.Point(0, 316);
+            this.txtDLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDLogin.MaxLength = 32767;
-            this.txtDLogin.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDLogin.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDLogin.Modified = false;
             this.txtDLogin.Multiline = false;
             this.txtDLogin.Name = "txtDLogin";
@@ -641,7 +652,7 @@ namespace Delivery.Forms
             this.txtDLogin.SelectionLength = 0;
             this.txtDLogin.SelectionStart = 0;
             this.txtDLogin.ShortcutsEnabled = true;
-            this.txtDLogin.Size = new System.Drawing.Size(151, 25);
+            this.txtDLogin.Size = new System.Drawing.Size(201, 31);
             this.txtDLogin.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDLogin.TabIndex = 6;
             this.txtDLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -681,9 +692,10 @@ namespace Delivery.Forms
             this.txtDCity.IconRight = null;
             this.txtDCity.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDCity.Lines = new string[0];
-            this.txtDCity.Location = new System.Drawing.Point(0, 155);
+            this.txtDCity.Location = new System.Drawing.Point(0, 191);
+            this.txtDCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDCity.MaxLength = 32767;
-            this.txtDCity.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDCity.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDCity.Modified = false;
             this.txtDCity.Multiline = false;
             this.txtDCity.Name = "txtDCity";
@@ -716,7 +728,7 @@ namespace Delivery.Forms
             this.txtDCity.SelectionLength = 0;
             this.txtDCity.SelectionStart = 0;
             this.txtDCity.ShortcutsEnabled = true;
-            this.txtDCity.Size = new System.Drawing.Size(151, 25);
+            this.txtDCity.Size = new System.Drawing.Size(201, 31);
             this.txtDCity.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDCity.TabIndex = 5;
             this.txtDCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -756,9 +768,10 @@ namespace Delivery.Forms
             this.txtDDistrict.IconRight = null;
             this.txtDDistrict.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDDistrict.Lines = new string[0];
-            this.txtDDistrict.Location = new System.Drawing.Point(0, 115);
+            this.txtDDistrict.Location = new System.Drawing.Point(0, 142);
+            this.txtDDistrict.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDDistrict.MaxLength = 32767;
-            this.txtDDistrict.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDDistrict.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDDistrict.Modified = false;
             this.txtDDistrict.Multiline = false;
             this.txtDDistrict.Name = "txtDDistrict";
@@ -791,7 +804,7 @@ namespace Delivery.Forms
             this.txtDDistrict.SelectionLength = 0;
             this.txtDDistrict.SelectionStart = 0;
             this.txtDDistrict.ShortcutsEnabled = true;
-            this.txtDDistrict.Size = new System.Drawing.Size(151, 25);
+            this.txtDDistrict.Size = new System.Drawing.Size(201, 31);
             this.txtDDistrict.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDDistrict.TabIndex = 4;
             this.txtDDistrict.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -831,9 +844,10 @@ namespace Delivery.Forms
             this.txtDWard.IconRight = null;
             this.txtDWard.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDWard.Lines = new string[0];
-            this.txtDWard.Location = new System.Drawing.Point(0, 75);
+            this.txtDWard.Location = new System.Drawing.Point(0, 92);
+            this.txtDWard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDWard.MaxLength = 32767;
-            this.txtDWard.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDWard.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDWard.Modified = false;
             this.txtDWard.Multiline = false;
             this.txtDWard.Name = "txtDWard";
@@ -866,7 +880,7 @@ namespace Delivery.Forms
             this.txtDWard.SelectionLength = 0;
             this.txtDWard.SelectionStart = 0;
             this.txtDWard.ShortcutsEnabled = true;
-            this.txtDWard.Size = new System.Drawing.Size(151, 25);
+            this.txtDWard.Size = new System.Drawing.Size(201, 31);
             this.txtDWard.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDWard.TabIndex = 3;
             this.txtDWard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -906,9 +920,10 @@ namespace Delivery.Forms
             this.txtDStreet.IconRight = null;
             this.txtDStreet.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDStreet.Lines = new string[0];
-            this.txtDStreet.Location = new System.Drawing.Point(0, 37);
+            this.txtDStreet.Location = new System.Drawing.Point(0, 46);
+            this.txtDStreet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDStreet.MaxLength = 32767;
-            this.txtDStreet.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDStreet.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDStreet.Modified = false;
             this.txtDStreet.Multiline = false;
             this.txtDStreet.Name = "txtDStreet";
@@ -941,7 +956,7 @@ namespace Delivery.Forms
             this.txtDStreet.SelectionLength = 0;
             this.txtDStreet.SelectionStart = 0;
             this.txtDStreet.ShortcutsEnabled = true;
-            this.txtDStreet.Size = new System.Drawing.Size(151, 25);
+            this.txtDStreet.Size = new System.Drawing.Size(201, 31);
             this.txtDStreet.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDStreet.TabIndex = 2;
             this.txtDStreet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -982,8 +997,9 @@ namespace Delivery.Forms
             this.txtDNo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDNo.Lines = new string[0];
             this.txtDNo.Location = new System.Drawing.Point(0, 0);
+            this.txtDNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDNo.MaxLength = 32767;
-            this.txtDNo.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDNo.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDNo.Modified = false;
             this.txtDNo.Multiline = false;
             this.txtDNo.Name = "txtDNo";
@@ -1016,7 +1032,7 @@ namespace Delivery.Forms
             this.txtDNo.SelectionLength = 0;
             this.txtDNo.SelectionStart = 0;
             this.txtDNo.ShortcutsEnabled = true;
-            this.txtDNo.Size = new System.Drawing.Size(151, 25);
+            this.txtDNo.Size = new System.Drawing.Size(201, 31);
             this.txtDNo.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDNo.TabIndex = 1;
             this.txtDNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1038,8 +1054,9 @@ namespace Delivery.Forms
             this.panel6.Controls.Add(this.label12);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(140, 423);
+            this.panel6.Size = new System.Drawing.Size(187, 521);
             this.panel6.TabIndex = 0;
             // 
             // btnDSaveUpdate
@@ -1079,7 +1096,8 @@ namespace Delivery.Forms
             this.btnDSaveUpdate.IdleIconLeftImage = null;
             this.btnDSaveUpdate.IdleIconRightImage = null;
             this.btnDSaveUpdate.IndicateFocus = false;
-            this.btnDSaveUpdate.Location = new System.Drawing.Point(18, 390);
+            this.btnDSaveUpdate.Location = new System.Drawing.Point(24, 480);
+            this.btnDSaveUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDSaveUpdate.Name = "btnDSaveUpdate";
             stateProperties37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties37.BorderRadius = 3;
@@ -1099,7 +1117,7 @@ namespace Delivery.Forms
             stateProperties38.IconLeftImage = null;
             stateProperties38.IconRightImage = null;
             this.btnDSaveUpdate.OnPressedState = stateProperties38;
-            this.btnDSaveUpdate.Size = new System.Drawing.Size(106, 30);
+            this.btnDSaveUpdate.Size = new System.Drawing.Size(141, 37);
             this.btnDSaveUpdate.TabIndex = 10;
             this.btnDSaveUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDSaveUpdate.TextMarginLeft = 0;
@@ -1112,9 +1130,10 @@ namespace Delivery.Forms
             this.panel8.Controls.Add(this.label18);
             this.panel8.Controls.Add(this.label17);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 180);
+            this.panel8.Location = new System.Drawing.Point(0, 225);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(140, 137);
+            this.panel8.Size = new System.Drawing.Size(187, 169);
             this.panel8.TabIndex = 6;
             // 
             // label18
@@ -1123,10 +1142,11 @@ namespace Delivery.Forms
             this.label18.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label18.Location = new System.Drawing.Point(0, 77);
+            this.label18.Location = new System.Drawing.Point(0, 94);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label18.Size = new System.Drawing.Size(97, 40);
+            this.label18.Padding = new System.Windows.Forms.Padding(0, 0, 0, 25);
+            this.label18.Size = new System.Drawing.Size(124, 50);
             this.label18.TabIndex = 6;
             this.label18.Text = "Tên tài khoản";
             // 
@@ -1136,9 +1156,10 @@ namespace Delivery.Forms
             this.label17.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(0, 117);
+            this.label17.Location = new System.Drawing.Point(0, 144);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(70, 20);
+            this.label17.Size = new System.Drawing.Size(91, 25);
             this.label17.TabIndex = 2;
             this.label17.Text = "Mật khẩu";
             // 
@@ -1148,10 +1169,11 @@ namespace Delivery.Forms
             this.label16.Dock = System.Windows.Forms.DockStyle.Top;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label16.Location = new System.Drawing.Point(0, 140);
+            this.label16.Location = new System.Drawing.Point(0, 175);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label16.Size = new System.Drawing.Size(79, 40);
+            this.label16.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label16.Size = new System.Drawing.Size(103, 50);
             this.label16.TabIndex = 5;
             this.label16.Text = "Thành phố";
             // 
@@ -1161,10 +1183,11 @@ namespace Delivery.Forms
             this.label15.Dock = System.Windows.Forms.DockStyle.Top;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label15.Location = new System.Drawing.Point(0, 100);
+            this.label15.Location = new System.Drawing.Point(0, 125);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label15.Size = new System.Drawing.Size(44, 40);
+            this.label15.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label15.Size = new System.Drawing.Size(58, 50);
             this.label15.TabIndex = 4;
             this.label15.Text = "Quận";
             // 
@@ -1174,10 +1197,11 @@ namespace Delivery.Forms
             this.label14.Dock = System.Windows.Forms.DockStyle.Top;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(0, 60);
+            this.label14.Location = new System.Drawing.Point(0, 75);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label14.Size = new System.Drawing.Size(60, 40);
+            this.label14.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label14.Size = new System.Drawing.Size(78, 50);
             this.label14.TabIndex = 3;
             this.label14.Text = "Phường";
             // 
@@ -1187,10 +1211,11 @@ namespace Delivery.Forms
             this.label13.Dock = System.Windows.Forms.DockStyle.Top;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(0, 20);
+            this.label13.Location = new System.Drawing.Point(0, 25);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label13.Size = new System.Drawing.Size(55, 40);
+            this.label13.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label13.Size = new System.Drawing.Size(69, 50);
             this.label13.TabIndex = 2;
             this.label13.Text = "Đường";
             // 
@@ -1201,8 +1226,9 @@ namespace Delivery.Forms
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
             this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 20);
+            this.label12.Size = new System.Drawing.Size(70, 25);
             this.label12.TabIndex = 1;
             this.label12.Text = "Số nhà";
             // 
@@ -1219,9 +1245,10 @@ namespace Delivery.Forms
             this.panel4.Controls.Add(this.txtDName);
             this.panel4.Controls.Add(this.txtDId);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(140, 0);
+            this.panel4.Location = new System.Drawing.Point(187, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(151, 423);
+            this.panel4.Size = new System.Drawing.Size(201, 521);
             this.panel4.TabIndex = 1;
             // 
             // txtDBank
@@ -1253,9 +1280,10 @@ namespace Delivery.Forms
             this.txtDBank.IconRight = null;
             this.txtDBank.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDBank.Lines = new string[0];
-            this.txtDBank.Location = new System.Drawing.Point(0, 355);
+            this.txtDBank.Location = new System.Drawing.Point(0, 437);
+            this.txtDBank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDBank.MaxLength = 32767;
-            this.txtDBank.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDBank.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDBank.Modified = false;
             this.txtDBank.Multiline = false;
             this.txtDBank.Name = "txtDBank";
@@ -1288,7 +1316,7 @@ namespace Delivery.Forms
             this.txtDBank.SelectionLength = 0;
             this.txtDBank.SelectionStart = 0;
             this.txtDBank.ShortcutsEnabled = true;
-            this.txtDBank.Size = new System.Drawing.Size(151, 25);
+            this.txtDBank.Size = new System.Drawing.Size(201, 31);
             this.txtDBank.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDBank.TabIndex = 9;
             this.txtDBank.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1328,9 +1356,10 @@ namespace Delivery.Forms
             this.txtDEmail.IconRight = null;
             this.txtDEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDEmail.Lines = new string[0];
-            this.txtDEmail.Location = new System.Drawing.Point(0, 315);
+            this.txtDEmail.Location = new System.Drawing.Point(0, 388);
+            this.txtDEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDEmail.MaxLength = 32767;
-            this.txtDEmail.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDEmail.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDEmail.Modified = false;
             this.txtDEmail.Multiline = false;
             this.txtDEmail.Name = "txtDEmail";
@@ -1363,7 +1392,7 @@ namespace Delivery.Forms
             this.txtDEmail.SelectionLength = 0;
             this.txtDEmail.SelectionStart = 0;
             this.txtDEmail.ShortcutsEnabled = true;
-            this.txtDEmail.Size = new System.Drawing.Size(159, 25);
+            this.txtDEmail.Size = new System.Drawing.Size(212, 31);
             this.txtDEmail.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDEmail.TabIndex = 8;
             this.txtDEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1403,9 +1432,10 @@ namespace Delivery.Forms
             this.txtDArea.IconRight = null;
             this.txtDArea.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDArea.Lines = new string[0];
-            this.txtDArea.Location = new System.Drawing.Point(0, 275);
+            this.txtDArea.Location = new System.Drawing.Point(0, 338);
+            this.txtDArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDArea.MaxLength = 32767;
-            this.txtDArea.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDArea.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDArea.Modified = false;
             this.txtDArea.Multiline = false;
             this.txtDArea.Name = "txtDArea";
@@ -1438,7 +1468,7 @@ namespace Delivery.Forms
             this.txtDArea.SelectionLength = 0;
             this.txtDArea.SelectionStart = 0;
             this.txtDArea.ShortcutsEnabled = true;
-            this.txtDArea.Size = new System.Drawing.Size(159, 25);
+            this.txtDArea.Size = new System.Drawing.Size(212, 31);
             this.txtDArea.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDArea.TabIndex = 7;
             this.txtDArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1478,9 +1508,10 @@ namespace Delivery.Forms
             this.txtDMotor.IconRight = null;
             this.txtDMotor.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDMotor.Lines = new string[0];
-            this.txtDMotor.Location = new System.Drawing.Point(0, 235);
+            this.txtDMotor.Location = new System.Drawing.Point(0, 289);
+            this.txtDMotor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDMotor.MaxLength = 32767;
-            this.txtDMotor.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDMotor.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDMotor.Modified = false;
             this.txtDMotor.Multiline = false;
             this.txtDMotor.Name = "txtDMotor";
@@ -1513,7 +1544,7 @@ namespace Delivery.Forms
             this.txtDMotor.SelectionLength = 0;
             this.txtDMotor.SelectionStart = 0;
             this.txtDMotor.ShortcutsEnabled = true;
-            this.txtDMotor.Size = new System.Drawing.Size(159, 25);
+            this.txtDMotor.Size = new System.Drawing.Size(212, 31);
             this.txtDMotor.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDMotor.TabIndex = 6;
             this.txtDMotor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1553,9 +1584,10 @@ namespace Delivery.Forms
             this.txtDPhone.IconRight = null;
             this.txtDPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDPhone.Lines = new string[0];
-            this.txtDPhone.Location = new System.Drawing.Point(0, 199);
+            this.txtDPhone.Location = new System.Drawing.Point(0, 245);
+            this.txtDPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDPhone.MaxLength = 32767;
-            this.txtDPhone.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDPhone.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDPhone.Modified = false;
             this.txtDPhone.Multiline = false;
             this.txtDPhone.Name = "txtDPhone";
@@ -1588,7 +1620,7 @@ namespace Delivery.Forms
             this.txtDPhone.SelectionLength = 0;
             this.txtDPhone.SelectionStart = 0;
             this.txtDPhone.ShortcutsEnabled = true;
-            this.txtDPhone.Size = new System.Drawing.Size(151, 25);
+            this.txtDPhone.Size = new System.Drawing.Size(201, 31);
             this.txtDPhone.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDPhone.TabIndex = 5;
             this.txtDPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1628,9 +1660,10 @@ namespace Delivery.Forms
             this.txtDDob.IconRight = null;
             this.txtDDob.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDDob.Lines = new string[0];
-            this.txtDDob.Location = new System.Drawing.Point(0, 155);
+            this.txtDDob.Location = new System.Drawing.Point(0, 191);
+            this.txtDDob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDDob.MaxLength = 32767;
-            this.txtDDob.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDDob.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDDob.Modified = false;
             this.txtDDob.Multiline = false;
             this.txtDDob.Name = "txtDDob";
@@ -1663,7 +1696,7 @@ namespace Delivery.Forms
             this.txtDDob.SelectionLength = 0;
             this.txtDDob.SelectionStart = 0;
             this.txtDDob.ShortcutsEnabled = true;
-            this.txtDDob.Size = new System.Drawing.Size(151, 25);
+            this.txtDDob.Size = new System.Drawing.Size(201, 31);
             this.txtDDob.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDDob.TabIndex = 4;
             this.txtDDob.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1703,9 +1736,10 @@ namespace Delivery.Forms
             this.txtDGender.IconRight = null;
             this.txtDGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDGender.Lines = new string[0];
-            this.txtDGender.Location = new System.Drawing.Point(0, 115);
+            this.txtDGender.Location = new System.Drawing.Point(0, 142);
+            this.txtDGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDGender.MaxLength = 32767;
-            this.txtDGender.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDGender.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDGender.Modified = false;
             this.txtDGender.Multiline = false;
             this.txtDGender.Name = "txtDGender";
@@ -1738,7 +1772,7 @@ namespace Delivery.Forms
             this.txtDGender.SelectionLength = 0;
             this.txtDGender.SelectionStart = 0;
             this.txtDGender.ShortcutsEnabled = true;
-            this.txtDGender.Size = new System.Drawing.Size(159, 25);
+            this.txtDGender.Size = new System.Drawing.Size(212, 31);
             this.txtDGender.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDGender.TabIndex = 3;
             this.txtDGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1778,9 +1812,10 @@ namespace Delivery.Forms
             this.txtDCitizenID.IconRight = null;
             this.txtDCitizenID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDCitizenID.Lines = new string[0];
-            this.txtDCitizenID.Location = new System.Drawing.Point(-8, 75);
+            this.txtDCitizenID.Location = new System.Drawing.Point(-11, 92);
+            this.txtDCitizenID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDCitizenID.MaxLength = 32767;
-            this.txtDCitizenID.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDCitizenID.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDCitizenID.Modified = false;
             this.txtDCitizenID.Multiline = false;
             this.txtDCitizenID.Name = "txtDCitizenID";
@@ -1813,7 +1848,7 @@ namespace Delivery.Forms
             this.txtDCitizenID.SelectionLength = 0;
             this.txtDCitizenID.SelectionStart = 0;
             this.txtDCitizenID.ShortcutsEnabled = true;
-            this.txtDCitizenID.Size = new System.Drawing.Size(159, 25);
+            this.txtDCitizenID.Size = new System.Drawing.Size(212, 31);
             this.txtDCitizenID.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDCitizenID.TabIndex = 2;
             this.txtDCitizenID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1853,9 +1888,10 @@ namespace Delivery.Forms
             this.txtDName.IconRight = null;
             this.txtDName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDName.Lines = new string[0];
-            this.txtDName.Location = new System.Drawing.Point(0, 37);
+            this.txtDName.Location = new System.Drawing.Point(0, 46);
+            this.txtDName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDName.MaxLength = 32767;
-            this.txtDName.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDName.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDName.Modified = false;
             this.txtDName.Multiline = false;
             this.txtDName.Name = "txtDName";
@@ -1888,7 +1924,7 @@ namespace Delivery.Forms
             this.txtDName.SelectionLength = 0;
             this.txtDName.SelectionStart = 0;
             this.txtDName.ShortcutsEnabled = true;
-            this.txtDName.Size = new System.Drawing.Size(149, 25);
+            this.txtDName.Size = new System.Drawing.Size(199, 31);
             this.txtDName.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDName.TabIndex = 1;
             this.txtDName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1929,9 +1965,10 @@ namespace Delivery.Forms
             this.txtDId.IconRight = null;
             this.txtDId.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDId.Lines = new string[0];
-            this.txtDId.Location = new System.Drawing.Point(-8, 0);
+            this.txtDId.Location = new System.Drawing.Point(-11, 0);
+            this.txtDId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDId.MaxLength = 32767;
-            this.txtDId.MinimumSize = new System.Drawing.Size(100, 20);
+            this.txtDId.MinimumSize = new System.Drawing.Size(133, 25);
             this.txtDId.Modified = false;
             this.txtDId.Multiline = false;
             this.txtDId.Name = "txtDId";
@@ -1964,7 +2001,7 @@ namespace Delivery.Forms
             this.txtDId.SelectionLength = 0;
             this.txtDId.SelectionStart = 0;
             this.txtDId.ShortcutsEnabled = true;
-            this.txtDId.Size = new System.Drawing.Size(157, 25);
+            this.txtDId.Size = new System.Drawing.Size(209, 31);
             this.txtDId.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtDId.TabIndex = 0;
             this.txtDId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1990,8 +2027,9 @@ namespace Delivery.Forms
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(140, 423);
+            this.panel3.Size = new System.Drawing.Size(187, 521);
             this.panel3.TabIndex = 0;
             // 
             // label11
@@ -2000,10 +2038,11 @@ namespace Delivery.Forms
             this.label11.Dock = System.Windows.Forms.DockStyle.Top;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(0, 340);
+            this.label11.Location = new System.Drawing.Point(0, 425);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label11.Size = new System.Drawing.Size(91, 40);
+            this.label11.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label11.Size = new System.Drawing.Size(116, 50);
             this.label11.TabIndex = 9;
             this.label11.Text = "Số tài khoản";
             // 
@@ -2013,10 +2052,11 @@ namespace Delivery.Forms
             this.label10.Dock = System.Windows.Forms.DockStyle.Top;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(0, 300);
+            this.label10.Location = new System.Drawing.Point(0, 375);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label10.Size = new System.Drawing.Size(46, 40);
+            this.label10.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label10.Size = new System.Drawing.Size(58, 50);
             this.label10.TabIndex = 8;
             this.label10.Text = "Email";
             // 
@@ -2026,10 +2066,11 @@ namespace Delivery.Forms
             this.label9.Dock = System.Windows.Forms.DockStyle.Top;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(0, 260);
+            this.label9.Location = new System.Drawing.Point(0, 325);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label9.Size = new System.Drawing.Size(134, 40);
+            this.label9.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label9.Size = new System.Drawing.Size(171, 50);
             this.label9.TabIndex = 7;
             this.label9.Text = "Khu vực hoạt động";
             // 
@@ -2039,10 +2080,11 @@ namespace Delivery.Forms
             this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(0, 220);
+            this.label8.Location = new System.Drawing.Point(0, 275);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label8.Size = new System.Drawing.Size(76, 40);
+            this.label8.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label8.Size = new System.Drawing.Size(97, 50);
             this.label8.TabIndex = 6;
             this.label8.Text = "Biến số xe";
             // 
@@ -2052,10 +2094,11 @@ namespace Delivery.Forms
             this.label7.Dock = System.Windows.Forms.DockStyle.Top;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(0, 180);
+            this.label7.Location = new System.Drawing.Point(0, 225);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label7.Size = new System.Drawing.Size(97, 40);
+            this.label7.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label7.Size = new System.Drawing.Size(123, 50);
             this.label7.TabIndex = 5;
             this.label7.Text = "Số điện thoại";
             // 
@@ -2065,10 +2108,11 @@ namespace Delivery.Forms
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(0, 140);
+            this.label6.Location = new System.Drawing.Point(0, 175);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label6.Size = new System.Drawing.Size(74, 40);
+            this.label6.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label6.Size = new System.Drawing.Size(96, 50);
             this.label6.TabIndex = 4;
             this.label6.Text = "Ngày sinh";
             // 
@@ -2078,10 +2122,11 @@ namespace Delivery.Forms
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(0, 100);
+            this.label5.Location = new System.Drawing.Point(0, 125);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label5.Size = new System.Drawing.Size(64, 40);
+            this.label5.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label5.Size = new System.Drawing.Size(82, 50);
             this.label5.TabIndex = 3;
             this.label5.Text = "giới tính";
             // 
@@ -2091,10 +2136,11 @@ namespace Delivery.Forms
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(0, 60);
+            this.label4.Location = new System.Drawing.Point(0, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label4.Size = new System.Drawing.Size(68, 40);
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label4.Size = new System.Drawing.Size(85, 50);
             this.label4.TabIndex = 2;
             this.label4.Text = "Số CCCD";
             // 
@@ -2104,10 +2150,11 @@ namespace Delivery.Forms
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(0, 20);
+            this.label3.Location = new System.Drawing.Point(0, 25);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.label3.Size = new System.Drawing.Size(73, 40);
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.label3.Size = new System.Drawing.Size(92, 50);
             this.label3.TabIndex = 1;
             this.label3.Text = "Họ và tên";
             // 
@@ -2118,8 +2165,9 @@ namespace Delivery.Forms
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.Size = new System.Drawing.Size(89, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã tài xế";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -2128,9 +2176,10 @@ namespace Delivery.Forms
             // 
             this.panelAcctxt.Controls.Add(this.label1);
             this.panelAcctxt.Controls.Add(this.lblDId);
-            this.panelAcctxt.Location = new System.Drawing.Point(52, 38);
+            this.panelAcctxt.Location = new System.Drawing.Point(69, 47);
+            this.panelAcctxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelAcctxt.Name = "panelAcctxt";
-            this.panelAcctxt.Size = new System.Drawing.Size(120, 465);
+            this.panelAcctxt.Size = new System.Drawing.Size(160, 572);
             this.panelAcctxt.TabIndex = 1;
             // 
             // label1
@@ -2139,10 +2188,11 @@ namespace Delivery.Forms
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(0, 20);
+            this.label1.Location = new System.Drawing.Point(0, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
-            this.label1.Size = new System.Drawing.Size(73, 36);
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.label1.Size = new System.Drawing.Size(92, 45);
             this.label1.TabIndex = 3;
             this.label1.Text = "Họ và tên";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -2154,8 +2204,9 @@ namespace Delivery.Forms
             this.lblDId.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDId.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblDId.Location = new System.Drawing.Point(0, 0);
+            this.lblDId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDId.Name = "lblDId";
-            this.lblDId.Size = new System.Drawing.Size(73, 20);
+            this.lblDId.Size = new System.Drawing.Size(93, 25);
             this.lblDId.TabIndex = 2;
             this.lblDId.Text = "Mã tài xế:";
             this.lblDId.Click += new System.EventHandler(this.lblDId_Click);
@@ -2163,9 +2214,10 @@ namespace Delivery.Forms
             // panelAccEdt
             // 
             this.panelAccEdt.Controls.Add(this.bunifuTextBox3);
-            this.panelAccEdt.Location = new System.Drawing.Point(178, 38);
+            this.panelAccEdt.Location = new System.Drawing.Point(237, 47);
+            this.panelAccEdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelAccEdt.Name = "panelAccEdt";
-            this.panelAccEdt.Size = new System.Drawing.Size(185, 468);
+            this.panelAccEdt.Size = new System.Drawing.Size(247, 576);
             this.panelAccEdt.TabIndex = 0;
             // 
             // bunifuTextBox3
@@ -2197,9 +2249,9 @@ namespace Delivery.Forms
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[0];
             this.bunifuTextBox3.Location = new System.Drawing.Point(0, 0);
-            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(3, 100, 3, 3);
+            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(4, 123, 4, 4);
             this.bunifuTextBox3.MaxLength = 32767;
-            this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(100, 20);
+            this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(133, 25);
             this.bunifuTextBox3.Modified = false;
             this.bunifuTextBox3.Multiline = false;
             this.bunifuTextBox3.Name = "bunifuTextBox3";
@@ -2232,7 +2284,7 @@ namespace Delivery.Forms
             this.bunifuTextBox3.SelectionLength = 0;
             this.bunifuTextBox3.SelectionStart = 0;
             this.bunifuTextBox3.ShortcutsEnabled = true;
-            this.bunifuTextBox3.Size = new System.Drawing.Size(181, 31);
+            this.bunifuTextBox3.Size = new System.Drawing.Size(241, 38);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox3.TabIndex = 4;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2245,12 +2297,13 @@ namespace Delivery.Forms
             // 
             // FormDAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(82)))), ((int)(((byte)(114)))));
-            this.ClientSize = new System.Drawing.Size(884, 504);
+            this.ClientSize = new System.Drawing.Size(1179, 620);
             this.Controls.Add(this.panelAccount);
-            this.MinimumSize = new System.Drawing.Size(750, 450);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(994, 543);
             this.Name = "FormDAccount";
             this.Text = "Thông tin tài khoản";
             this.panelAccount.ResumeLayout(false);
