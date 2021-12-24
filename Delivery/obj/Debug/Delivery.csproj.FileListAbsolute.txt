@@ -37,3 +37,6 @@ G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\bin\Debug\Bunifu_UI_v1.5.3
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.exe
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.pdb
 G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.csproj.AssemblyReference.cache
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.Staff.fContractList.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.Staff.MainStaff.resources
+G:\Nam3\HeQuanTri\project\OnlineApp\Delivery\Delivery\obj\Debug\Delivery.Forms.Staff.fContract.resources

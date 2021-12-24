@@ -54,26 +54,35 @@ namespace Delivery.Forms
         }
         void LoadInfoDriver(string id)
         {
-            Driver r = DriverDAO.Instance.GetInfoDriver(id);
-         
-            txtDId.Text = r.ID1;
-            txtDName.Text = r.Name1;
-            txtDCitizenID.Text = r.CMND1;
-            txtDPhone.Text = r.Phone1;
-            txtDMotor.Text = r.NoMoto1;
-            txtDGender.Text = r.Gender1;
-            txtDIncome.Text = r.Income1.ToString();
-            txtDEmail.Text = r.Email1;
-            txtDDob.Text = r.DoB1.ToString("MM/dd/yyyy");
-            txtDBank.Text = r.Bank1;
-            txtDNo.Text = r.Addr1[0];
-            txtDStreet.Text = r.Addr1[1];
-            txtDWard.Text = r.Addr1[2];
-            txtDDistrict.Text = r.Addr1[3];
-            txtDCity.Text = r.Addr1[4];
-            txtDArea.Text = r.Area1;
-            txtDLogin.Text = r.Login1;
-            txtDPass.Text = r.Pass1;
+            try
+            {
+                Driver r = DriverDAO.Instance.GetInfoDriver(id);
+
+                txtDId.Text = r.ID1;
+                txtDName.Text = r.Name1;
+                txtDCitizenID.Text = r.CMND1;
+                txtDPhone.Text = r.Phone1;
+                txtDMotor.Text = r.NoMoto1;
+                txtDGender.Text = r.Gender1;
+                txtDIncome.Text = r.Income1.ToString();
+                txtDEmail.Text = r.Email1;
+                txtDDob.Text = r.DoB1.ToString("MM/dd/yyyy");
+                txtDBank.Text = r.Bank1;
+                txtDNo.Text = r.Addr1[0];
+                txtDStreet.Text = r.Addr1[1];
+                txtDWard.Text = r.Addr1[2];
+                txtDDistrict.Text = r.Addr1[3];
+                txtDCity.Text = r.Addr1[4];
+                txtDArea.Text = r.Area1;
+                txtDLogin.Text = r.Login1;
+                txtDPass.Text = r.Pass1;
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("exeption:" + e.Message);
+            }
+           
 
         }
         void Enable()

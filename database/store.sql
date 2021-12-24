@@ -1,7 +1,7 @@
 ﻿use QLHD
 go
 
-alter proc USP_ShowNotDoneOrderByArea @matx nvarchar(100)
+create or alter proc USP_ShowNotDoneOrderByArea @matx nvarchar(100)
 as
 set tran isolation level read committed
 begin tran
@@ -25,7 +25,7 @@ commit tran
 go
 
 --store xuất danh sách những đơn hàng đã hoàn thành theo mã tài xế
-alter proc USP_ShowDoneOrderByArea @matx nvarchar(100), @status nvarchar(100) --đã giao
+create or alter proc USP_ShowDoneOrderByArea @matx nvarchar(100), @status nvarchar(100) --đã giao
 as
 set tran isolation level read committed
 begin tran
@@ -47,7 +47,7 @@ commit tran
 go
 
 -----
-create proc USP_ShowDoneKH @matx nvarchar(100), @makh nvarchar(100)
+CREATE or alter proc USP_ShowDoneKH @matx nvarchar(100), @makh nvarchar(100)
 as
 set tran isolation level read committed
 begin tran
@@ -70,18 +70,15 @@ begin tran
 commit tran
 go
 
-declare @strin varchar(100)
-set @strin='Đã giao'
-exec USP_ShowDoneKH 'TX3', 'kh3'
-select*from donhang
+
 --lấy ra khu vực hoạt động của tài xế theo id
-create proc USP_GetArea @matx nvarchar(100)
+CREATE or alter proc USP_GetArea @matx nvarchar(100)
 as
 	select KhuVucHoatDong from taixe where matx=@matx
 go
 
 --xuất danh sách đơn hàng theo khu vực hoạt động của tài xế
-alter proc USP_GetAllOrderByAreaOfDriver @matx nvarchar(100)
+create or alter proc USP_GetAllOrderByAreaOfDriver @matx nvarchar(100)
 as
 set tran isolation level read committed
 begin tran
@@ -105,7 +102,7 @@ commit tran
 go
 
 --xuất thông tin tài xế theo mã tài xế
-alter proc USP_GetInfoDriver @matx nvarchar(100)
+create or alter proc USP_GetInfoDriver @matx nvarchar(100)
 as
 begin
 	select * from TAIKHOAN tk join TAIXE tx on tx.matx=tk.mand where tx.matx=@matx 
@@ -136,7 +133,7 @@ commit tran
 go
 
 --update thông tin tài xế
-create proc USP_UpdateInfoDriver @matx nvarchar(100), @tentx nvarchar(100), @cmnd nvarchar(100), @gioitinh nvarchar(100),
+create or alter proc USP_UpdateInfoDriver @matx nvarchar(100), @tentx nvarchar(100), @cmnd nvarchar(100), @gioitinh nvarchar(100),
 								@ngaysinh DATETIME, @sdt nvarchar(100), @biensoxe nvarchar(100), @khuvuc nvarchar(100), 
 								@email nvarchar(100), @tk nvarchar(100), @sonha int, @duong nvarchar(100), @phuong nvarchar(100),
 								@quan nvarchar(100), @tp nvarchar(100)
@@ -152,7 +149,7 @@ end
 go
 
 --lấy đơn hàng theo mã đơn hàng
-CREATE PROC USP_GetInfoOrder @madh NVARCHAR(100)
+CREATE or alter PROC USP_GetInfoOrder @madh NVARCHAR(100)
 AS
 BEGIN TRAN
 SET TRAN ISOLATION LEVEL READ COMMITTED
@@ -165,40 +162,76 @@ SET TRAN ISOLATION LEVEL READ COMMITTED
 COMMIT TRAN
 GO
 
-EXEC dbo.USP_GetInfoOrder @madh = N'dh100' -- nvarchar(100)
+
 
 --cập nhật mã tài xế vào đơn hàng trống, và đổi trạng thái giao hàng sang đã nhận hàng
-CREATE OR ALTER PROC USP_UpdateIDDriverIntoOrder @madh nvarchar(100), @matx nvarchar(100)
-AS
-BEGIN TRAN
-	IF NOT EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh)
-	BEGIN
-		PRINT('khong ton tai don hang')
-		ROLLBACK tran
-    END
-    IF NOT EXISTS(SELECT*FROM dbo.TAIXE WHERE MaTX=@matx)
-	BEGIN
-		PRINT('khong ton tai tai xe')
-		ROLLBACK TRAN
-	END
-	IF EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh AND TinhTrangDH=N'Đã giao' OR TinhTrangDH=N'Đang giao')
-	BEGIN
-		PRINT('khong ton tai don hang phu hop')
-		ROLLBACK TRAN
-	END
-	IF EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh AND MaTX IS NOT NULL)
-	BEGIN
-		PRINT('khong ton tai don hang phu hop')
-		ROLLBACK TRAN
-	END
-	UPDATE dbo.DONHANG
-	SET MaTX=@matx, TinhTrangDH=N'Tài xế đã nhận hàng'
-	WHERE MaDH=@madh AND TinhTrangDH=N'Đã đóng gói hàng'
-	
-COMMIT TRAN
-GO
+--CREATE OR ALTER PROC USP_UpdateIDDriverIntoOrder @madh nvarchar(100), @matx nvarchar(100)
+--AS
+--BEGIN TRAN
+----	IF NOT EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh)
+----	BEGIN
+----		PRINT('khong ton tai don hang')
+----		ROLLBACK tran
+----    END
+----    IF NOT EXISTS(SELECT*FROM dbo.TAIXE WHERE MaTX=@matx)
+----	BEGIN
+----		PRINT('khong ton tai tai xe')
+----		ROLLBACK TRAN
+----	END
+--	--IF EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh AND TinhTrangDH=N'Đã giao' OR TinhTrangDH=N'Đang giao')
+--	--BEGIN
+--	--	PRINT('khong ton tai don hang phu hop')
+--	--	ROLLBACK TRAN
+--	--END
+--	IF EXISTS(SELECT*FROM dbo.DONHANG WHERE MaDH=@madh AND MaTX IS NOT NULL)
+--	BEGIN
+--		PRINT('khong ton tai don hang phu hop')
+--		ROLLBACK TRAN
+--	END
+--	else
+--	begin
+--		waitfor delay '00:00:05'
+--	UPDATE dbo.DONHANG
+--	SET MaTX=@matx, TinhTrangDH=N'Tài xế đã nhận hàng'
+--	WHERE MaDH=@madh AND TinhTrangDH=N'Đã đóng gói hàng'
+--	end
 
- EXEC USP_UpdateIDDriverIntoOrder 'dh1','TX1' 
+--COMMIT TRAN
+--GO
+
+CREATE OR ALTER PROC USP_UpdateIDDriverIntoOrder @madh nvarchar(100), @matx nvarchar(100)
+as
+begin tran
+	--Kiểm tra Mã đơn hàng
+	--if not exists (select * from DONHANG where MaDH = @madh)
+	--begin
+	--	RAISERROR(N'Mã đơn hàng này không tồn tại',16,1)
+	--	ROLLBACK
+	--end
+	--Kiểm tra Mã tài xế
+	--if not exists (select * from TAIXE where @matx = MaTX)
+	--begin
+	--	RAISERROR(N'Mã tài xế không tồn tại',16,1)
+	--	ROLLBACK
+	--end
+	--Kiểm tra đơn hàng đã có Tài xế nào nhận chưa
+	if (select MaTX from DONHANG where MaDH = @madh) is NULL
+	begin
+		WAITFOR DELAY '00:00:05'
+		update DONHANG set MaTX = @matx, TinhTrangDH = N'Tài xế đã nhận hàng' where MaDH = @madh 
+		--update DONHANG set TinhTrangDH = N'Tài xế đã nhận hàng' where MaDH = @madh 
+	end
+	else 
+	begin
+			--RAISERROR(N'Đã có tài xế nhận đơn hàng này',16,1)
+			ROLLBACK
+			return
+	end
+commit tran
+go
+
+
+
 
  --Cập nhật tình trạng đơn hàng của tài xế
  CREATE OR ALTER PROC USP_UpdateDriverOrderStatus @madh nvarchar(100), @matx nvarchar(100), @status nvarchar(100)
@@ -214,6 +247,7 @@ GO
 		PRINT ('don hang da duoc chon truoc do')
 		ROLLBACK TRAN
 	END
+	WAITFOR DELAY '00:00:05'
 	UPDATE dbo.DONHANG
 	SET TinhTrangDH=@status
 	WHERE MaDH=@madh AND MaTX=@matx
@@ -274,7 +308,7 @@ GO
  GO
  
  --cập nhật thu nhập của tài xế trong bảng tài xế
- CREATE PROC USP_UpdateDriverIncome @matx NVARCHAR(100)
+ CREATE or alter  PROC USP_UpdateDriverIncome @matx NVARCHAR(100)
  AS
  BEGIN TRAN
 	IF NOT EXISTS(SELECT*FROM dbo.TAIXE WHERE MaTX=@matx)
@@ -296,10 +330,7 @@ GO
 
  COMMIT TRAN
  GO
- 
- EXEC dbo.USP_InsertOrderIntoIncomeDriver @madh = N'DH100' -- nvarchar(100)
-                                           -- nvarchar(100)
- EXEC dbo.USP_UpdateDriverIncome @matx = N'TX1' -- nvarchar(100)
+
  
 
  create OR ALTER PROC USP_GetUserID @loginname nvarchar(100), @pass nvarchar(100)
@@ -310,7 +341,7 @@ GO
  GO
 
   --Kiểm tra tài khoản có tồn tại
- CREATE PROC USP_CheckAccountExist @loginname nvarchar(100), @pass nvarchar(100)
+CREATE or alter PROC USP_CheckAccountExist @loginname nvarchar(100), @pass nvarchar(100)
  AS
  BEGIN
 	SELECT*FROM dbo.TAIKHOAN WHERE UserID=@loginname AND UserPassword=@pass
@@ -529,32 +560,23 @@ GO
  END
  GO
 
- EXEC USP_InsertAccount 'khachhangmoi', '123456' , N'Khách hàng'
+
  
- DELETE dbo.TAIKHOAN WHERE MaND='tx8'
- SELECT dbo.getNumber('NV1000')
+
  
- DECLARE @index INT =2
- SELECT dbo.TAIXE.MaTX
- FROM dbo.TAIXE, (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX 
-													FROM dbo.TAIXE ) as t
- WHERE t.MyIndex=@index AND TAIXE.MaTX = t.MaTX
+ --DECLARE @index INT =2
+ --SELECT dbo.TAIXE.MaTX
+ --FROM dbo.TAIXE, (SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX 
+	--												FROM dbo.TAIXE ) as t
+ --WHERE t.MyIndex=@index AND TAIXE.MaTX = t.MaTX
 
 
---kiểm tra user có bị trùng
+----kiểm tra user có bị trùng
 
-SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX
-FROM dbo.TAIXE 
+--SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS MyIndex, MaTX
+--FROM dbo.TAIXE 
 
 --lấy thông tin trưng bày cho sản phẩm -- tên sản phẩm, tên đôi tác, tên chi nhánh, tên loại hàng, giá bán, giá giảm
-CREATE PROC USP_GetInfoDisplayProduct @masp nvarchar(100)
-AS
-BEGIN
-	SELECT D.TenDT, 
-    FROM dbo.SANPHAM s, dbo.DOITAC d
-	WHERE s.MaSP=@masp AND s.MaDT=d.MaDT AND s.MaDT=cn.MaDT AND s.MaCN=cn.MaCN
-END
-GO
 
 --tạo đơn hàng mới
 CREATE OR ALTER PROC USP_InsertOrder @makh NVARCHAR(100), @tinhtrang NVARCHAR(100), @hinhthuc NVARCHAR(100), @phivc MONEY, @thoigian datetime
@@ -595,33 +617,25 @@ BEGIN
 	SELECT * FROM dbo.DONHANG WHERE madh=@newOrderID
 END
 GO
-EXEC dbo.USP_InsertOrder @makh = N'KH5' -- nvarchar(100)
 
+SET TRAN ISOLATION LEVEL seri
 --thêm chi tiết đơn hàng
 CREATE OR ALTER PROC USP_InsertDetailOrder @madh nvarchar(100), @masp nvarchar(100), @sl int, @gia money, @thanhtien money
 AS
-BEGIN TRAN
-	
+begin tran
 	--kiểm tra hàng tồn của sản phẩm
 	DECLARE @slton INT
 	SET @slton = (SELECT SoLuongTon FROM dbo.SANPHAM WHERE masp=@masp)
-	IF (@slton = 0)
-	BEGIN
-		RAISERROR(N'Sản phẩm hết hàng' ,15,1)
-		ROLLBACK
-		RETURN 
-    END
-	
-	--nếu số lượng tồn < số lượng cần mua
-	IF (@slton < @sl)
-	BEGIN
-		RAISERROR(N'Không đủ số lượng cung cấp',16,1)
-		ROLLBACK
-		return
-    END
-
-	--thêm 1 chi tiết đơn hàng 
-	INSERT INTO dbo.CT_DONHANG
+	----cập nhật tổng tiền của đơn hàng
+	--IF (@slton = 0)
+	--BEGIN
+	--	--RAISERROR(N'Sản phẩm hết hàng' ,15,1)
+	--	ROLLBACK TRAN
+	--	RETURN 
+ --   END
+	--ELSE
+	--BEGIN 
+		INSERT INTO dbo.CT_DONHANG
 	(
 	    MaDH,
 	    MaSP,
@@ -636,15 +650,107 @@ BEGIN TRAN
 	    @gia, -- GiaTien - money
 	    @thanhtien  -- ThanhTien - money
 	    )
+		--WAITFOR DELAY '00:00:05'
+		
+		UPDATE dbo.SANPHAM
+		SET SoLuongTon=@slton-@sl
+		WHERE MaSP=@masp
 
-	--cập nhật tổng tiền của đơn hàng
-	UPDATE dbo.DONHANG
-	SET TongTien = (SELECT SUM(THANHTIEN) FROM dbo.CT_DONHANG WHERE MaDH=@madh GROUP BY MaDH ) + PhiVC
-	FROM dbo.DONHANG
-	WHERE dbo.DONHANG.MaDH=@MADH
-COMMIT TRAN
+		UPDATE dbo.DONHANG
+		SET TongTien = (SELECT SUM(THANHTIEN) FROM dbo.CT_DONHANG WHERE MaDH=@madh GROUP BY MaDH ) + PhiVC
+		FROM dbo.DONHANG
+		WHERE dbo.DONHANG.MaDH=@MADH
+	--END
+commit tran
 GO
- EXEC USP_INSERTDETAILORDER 'DH1000','SP1',2,1000,2000
+--BEGIN TRAN
+	
+--	--kiểm tra hàng tồn của sản phẩm
+--	DECLARE @slton INT
+--	SET @slton = (SELECT SoLuongTon FROM dbo.SANPHAM WHERE masp=@masp)
+	
+	
+--	--nếu số lượng tồn < số lượng cần mua
+--	/*IF (@slton < @sl)
+--	BEGIN
+--		--RAISERROR(N'Không đủ số lượng cung cấp',16,1)
+--		ROLLBACK
+--		return
+--    END*/
+	
+--	/*IF EXISTS(SELECT*FROM dbo.CT_DONHANG WHERE MaDH=@madh AND MaSP=@masp)
+--	BEGIN
+--		UPDATE dbo.CT_DONHANG
+--		SET SoLuong=SoLuong+@sl
+--		WHERE MaDH=@madh AND MaSP=@masp
+--    END
+--	*/
+--	--thêm 1 chi tiết đơn hàng 
+	
+
+--	--cập nhật tổng tiền của đơn hàng
+--	IF (@slton = 0)
+--	BEGIN
+--		--RAISERROR(N'Sản phẩm hết hàng' ,15,1)
+--		ROLLBACK TRAN
+--		RETURN 
+--    END
+--	ELSE
+--	BEGIN 
+--		INSERT INTO dbo.CT_DONHANG
+--	(
+--	    MaDH,
+--	    MaSP,
+--	    SoLuong,
+--	    GiaTien,
+--	    ThanhTien
+--	)
+--	VALUES
+--	(   @madh,  -- MaDH - nvarchar(100)
+--	    @masp,  -- MaSP - nvarchar(100)
+--	    @sl,    -- SoLuong - int
+--	    @gia, -- GiaTien - money
+--	    @thanhtien  -- ThanhTien - money
+--	    )
+--		WAITFOR DELAY '00:00:05'
+--		UPDATE dbo.SANPHAM
+--		SET SoLuongTon=SoLuongTon-@sl
+--		WHERE MaSP=@masp
+
+--		WAITFOR DELAY '00:00:02'
+--		UPDATE dbo.DONHANG
+--		SET TongTien = (SELECT SUM(THANHTIEN) FROM dbo.CT_DONHANG WHERE MaDH=@madh GROUP BY MaDH ) + PhiVC
+--		FROM dbo.DONHANG
+--		WHERE dbo.DONHANG.MaDH=@MADH
+--	END
+	
+	
+--	--giảm số lượng tồn của sản phẩm
+	
+
+--COMMIT TRAN
+--GO
+
+--
+--XEM DANH SÁCH SẢN PHẨM THEO MÃ ĐỐI TÁC - lỗi dirtyread
+CREATE PROC USP_GetProductListBySupplierID_RollBack @madt NVARCHAR(100)
+AS
+SET TRAN ISOLATION LEVEL READ UNCOMMITTED ---lỗi
+BEGIN TRAN
+	SELECT*FROM dbo.SANPHAM WHERE MaDT=@madt
+COMMIT
+GO
+
+--XEM DANH SÁCH SẢN PHẨM THEO MÃ ĐỐI TÁC - sửa lỗi dirtyread
+CREATE PROC USP_GetProductListBySupplierID @madt NVARCHAR(100)
+AS
+SET TRAN ISOLATION LEVEL READ COMMITTED --- sua lỗi
+BEGIN TRAN
+	SELECT*FROM dbo.SANPHAM WHERE MaDT=@madt
+COMMIT
+GO
+
+
 
 
 

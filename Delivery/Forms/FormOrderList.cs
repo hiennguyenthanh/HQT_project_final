@@ -1,4 +1,4 @@
-﻿using Delivery.DAO;
+﻿                         using Delivery.DAO;
 using Delivery.DTO;
 using System;
 using System.Collections.Generic;
@@ -90,7 +90,7 @@ namespace Delivery.Forms
             int index = e.RowIndex;
             DataGridViewRow row = gridOrder.Rows[index];
             string MADH = row.Cells[0].Value.ToString();
-            OpenChildForm(new FormDetailedOrder(MADH));
+            OpenChildForm(new FormDetailedOrder(this.UserID,MADH));
         }
     }
     

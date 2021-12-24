@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\ContractDAO.cs" />
     <Compile Include="DAO\Global.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="DAO\SupplierDAO.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DriverDAO.cs" />
     <Compile Include="DAO\OrderDAO.cs" />
+    <Compile Include="DTO\Contract.cs" />
     <Compile Include="DTO\DetailedOrder.cs" />
     <Compile Include="DTO\Driver.cs" />
     <Compile Include="DTO\Order.cs" />
@@ -163,6 +165,24 @@
     <Compile Include="Forms\fSignUp.Designer.cs">
       <DependentUpon>fSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Staff\fContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\fContract.Designer.cs">
+      <DependentUpon>fContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\fContractList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\fContractList.Designer.cs">
+      <DependentUpon>fContractList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\MainStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\MainStaff.Designer.cs">
+      <DependentUpon>MainStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +235,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fSignUp.resx">
       <DependentUpon>fSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\fContract.resx">
+      <DependentUpon>fContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\fContractList.resx">
+      <DependentUpon>fContractList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\MainStaff.resx">
+      <DependentUpon>MainStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

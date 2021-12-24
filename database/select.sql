@@ -1,4 +1,4 @@
-use QLHD
+﻿use QLHD
 go
 
 select*from donhang
@@ -9,7 +9,7 @@ SELECT*FROM dbo.TAIKHOAN
 SELECT*FROM dbo.NHANVIEN
 SELECT*FROM dbo.HOPDONG
 SELECT*FROM dbo.KHACHHANG
-SELECT*FROM dbo.SANPHAM WHERE MaDT='DT5'
+SELECT*FROM dbo.SANPHAM
 SELECT*FROM dbo.DOITAC
 SELECT*FROM dbo.CHINHANH
 SELECT*FROM dbo.SANPHAM
@@ -17,29 +17,22 @@ SELECT*FROM dbo.LOAIHANG
 
 SELECT*FROM dbo.QUANLY
 
-INSERT INTO dbo.TAIKHOAN
-(
-    MaND,
-    UserID,
-    UserPassword,
-    TrangThai
-)
-VALUES
-(    N'QL1', -- MaND - nvarchar(100)
-    N'dlv', -- UserID - nvarchar(100)
-    N'1345', -- UserPassword - nvarchar(100)
-    1   -- TrangThai - int
-    )
-(
-    MaND,
-    UserID,
-    UserPassword,
-    TrangThai
-)
-VALUES
-(   N'QL1', -- MaND - nvarchar(100)
-    N'dlv', -- UserID - nvarchar(100)
-    N'1345', -- UserPassword - nvarchar(100)
-    1    -- TrangThai - int
-    )
+update taixe
+set khuvuchoatdong  = N'Quận 2'
+where matx='TX3'
 
+UPDATE dbo.SANPHAM
+SET SoLuongTon=1
+WHERE masp='sp1'
+UPDATE dbo.TAIKHOAN
+SET TrangThai=1
+WHERE UserID='demo1' OR UserID='demo2'
+update donhang
+set tinhtrangdh=N'Đã đóng gói hàng'
+where madh='DH2254'
+update donhang
+set tinhtrangdh=N'Đã đóng gói hàng', matx = null
+where madh='dh922'
+update taixe
+set quan_tx=N'Quận 2'
+where matx='tx3'

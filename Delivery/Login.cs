@@ -44,18 +44,7 @@ namespace Delivery
         //    this.Show();
         //}
 
-        private void linkDangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           // fSignUp f = new fSignUp();
-            this.Hide();
-          //  f.ShowDialog();
-            this.Show();
-        }
 
-        private void labelDangNhap_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {

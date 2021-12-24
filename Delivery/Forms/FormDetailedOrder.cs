@@ -15,11 +15,13 @@ namespace Delivery.Forms
     public partial class FormDetailedOrder : Form
     {
         private string UserID;
-        public FormDetailedOrder(string userid)
+        private string OrderID;
+        public FormDetailedOrder(string userid,string orderid)
         {
             InitializeComponent();
             this.UserID = userid;
-            LoadInfoChoosenOrder(this.UserID);
+            this.OrderID = orderid;
+            LoadInfoChoosenOrder(this.OrderID);
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -29,27 +31,34 @@ namespace Delivery.Forms
 
         void LoadInfoChoosenOrder(string id)
         {
-            Order order = OrderDAO.Instance.GetOrder(id);
-            txtDOrderID.Text = order.ID1;
-            txtDCusID.Text = order.CusID1;
-            txtDMethod.Text = order.Method1;
-            txtDShipFee.Text = order.ShipFee1.ToString();
-            float receivedFee = (float)(0.3 * order.ShipFee1);
-            //tiền phí mà tài xế nhận được
-            txtDReceivedFee.Text = receivedFee.ToString();
-            txtDOrderTime.Text = order.TimeOrder1.ToString("MM/dd/yyyy");
-            string temp = order.OAddr1;
-            string[] listAddr1 = temp.Split(',');
-            string no = listAddr1[0].Trim();
-            string street = listAddr1[1].Trim();
-            string ward = listAddr1[2].Trim();
-            string district = listAddr1[3].Trim();
-            string city = listAddr1[4].Trim();
-            txtDOrderNo.Text = no;
-            txtDOrderStreet.Text = street;
-            txtDOrderWard.Text = ward;
-            txtDOrderDistrict.Text = district;
-            txtDOrderCity.Text = city;
+            try
+            {
+                Order order = OrderDAO.Instance.GetOrder(id);
+                txtDOrderID.Text = order.ID1;
+                txtDCusID.Text = order.CusID1;
+                txtDMethod.Text = order.Method1;
+                txtDShipFee.Text = order.ShipFee1.ToString();
+                float receivedFee = (float)(0.3 * order.ShipFee1);
+                //tiền phí mà tài xế nhận được
+                txtDReceivedFee.Text = receivedFee.ToString();
+                txtDOrderTime.Text = order.TimeOrder1.ToString("MM/dd/yyyy");
+                string temp = order.OAddr1;
+                string[] listAddr1 = temp.Split(',');
+                string no = listAddr1[0].Trim();
+                string street = listAddr1[1].Trim();
+                string ward = listAddr1[2].Trim();
+                string district = listAddr1[3].Trim();
+                string city = listAddr1[4].Trim();
+                txtDOrderNo.Text = no;
+                txtDOrderStreet.Text = street;
+                txtDOrderWard.Text = ward;
+                txtDOrderDistrict.Text = district;
+                txtDOrderCity.Text = city;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("exception: " + e.Message);
+            }
 
         }
 
@@ -65,11 +74,11 @@ namespace Delivery.Forms
 
         private void btnDChooseOrder_Click(object sender, EventArgs e)
         {
-            string MADH = txtDOrderID.Text;
+           string MADH = this.OrderID;
             string MATX = this.UserID;
             //thêm mã tài xế vào đơn hàng đã chọn
-            bool result = DriverDAO.Instance.UpdateChoosenOrder(MADH,MATX);
-            if (result)
+            int result = DriverDAO.Instance.UpdateChoosenOrder(MADH,MATX);
+            if (result>0)
             {
                 MessageBox.Show("Chọn đơn hàng thành công");
             }

@@ -53,12 +53,12 @@ namespace Delivery.DAO
                                                         Convert.ToInt32(d.Addr1[0]),d.Addr1[1],d.Addr1[2],d.Addr1[3],d.Addr1[4] });
             return result>0;
         }
-        public bool UpdateChoosenOrder(string OrderID, string DriverID)
+        public int UpdateChoosenOrder(string OrderID, string DriverID)
         {
             string query = "USP_UpdateIDDriverIntoOrder @madh , @matx";
             // thêm mã tài xế vào đơn hàng đã chọn
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { OrderID, DriverID });
-            return result > 0;
+            return result;
         }
         public bool UpdateOrderStatus (string OrderID, string DriverID, string choosenStatus)
         {

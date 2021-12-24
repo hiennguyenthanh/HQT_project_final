@@ -8,19 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Delivery.Forms.Customer
+namespace Delivery.Forms.Staff
 {
-    public partial class MainCustomer : Form
+    public partial class MainStaff : Form
     {
         public Button currentBtn;
         private Form activeForm;
-        private string CusID;
-        public MainCustomer(string id)
+        private string UserID;
+        public MainStaff(string userid)
         {
             InitializeComponent();
-            this.CusID = id;
-            OpenChildForm(new fDisplayProduct(this.CusID), null);
-            btnCInfo.Text = this.CusID;
+            this.UserID = userid;
         }
 
         private void ActivateButton(object btnSender)
@@ -33,8 +31,7 @@ namespace Delivery.Forms.Customer
                     currentBtn = (Button)btnSender;
                     currentBtn.BackColor = Color.FromArgb(135, 162, 182); //xanh nhat
                     currentBtn.ForeColor = Color.Gainsboro;
-                    currentBtn.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    btnCCloseChild.Visible = true;
+                    currentBtn.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
 
                 }
@@ -52,13 +49,7 @@ namespace Delivery.Forms.Customer
                 }
             }
         }
-        private void Reset()
-        {
-            DisableButton();
-            OpenChildForm(new fDisplayProduct(this.CusID), null);
-            currentBtn = null;
-            btnCCloseChild.Visible = false;
-        }
+
         private void OpenChildForm(Form childform, object btnSender)
         {
             if (activeForm != null)
@@ -71,31 +62,22 @@ namespace Delivery.Forms.Customer
             activeForm.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;
             childform.Dock = DockStyle.Fill;
-            this.panelCDesktop.Controls.Add(childform);
-            this.panelCDesktop.Tag = childform;
+            this.panelStaffDesktop.Controls.Add(childform);
+            this.panelStaffDesktop.Tag = childform;
             childform.BringToFront();
             childform.Show();
-            lblCTitle.Text = childform.Text;
+            lblSSTitle.Text = childform.Text;
 
         }
 
-        private void btnCAcc_Click(object sender, EventArgs e)
+        private void btnAcc_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void btnCCloseChild_Click(object sender, EventArgs e)
+        private void btnContractList_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-                Reset();
-            }
-        }
-
-        private void btnCart_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.Customer.fCustomerCart(this.CusID), sender);
+            OpenChildForm(new fContract(this.UserID), sender);
         }
     }
 }

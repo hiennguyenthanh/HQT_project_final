@@ -38,17 +38,26 @@ namespace Delivery.Forms.Customer
         }
         private void LoadInfoChoosenProduct(Product p)
         {
-            txtCSupplierName.Text= SupplierName;
-            txtCBranchName.Text = p.BranchID1;
-            string query = "select TENLH from LOAIHANG where malh= '" + p.CategoryID1 + "'";
+            try
+            {
+                txtCSupplierName.Text = SupplierName;
+                txtCBranchName.Text = p.BranchID1;
+                string query = "select TENLH from LOAIHANG where malh= '" + p.CategoryID1 + "'";
+
+                object temp = DataProvider.Instance.ExecuteScalar(query, null);
+                string temp1 = temp.ToString();
+                txtCCategory.Text = temp1;
+                txtCProductID.Text = p.ProductID1;
+                txtCProductName.Text = p.ProductName1;
+                txtCSalePrice.Text = p.SalePrice1.ToString();
+                txtCDiscount.Text = p.DiscountPrice1.ToString();
+                txtInventory.Text = p.NInventory1.ToString();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
             
-            object temp = DataProvider.Instance.ExecuteScalar(query, null);
-            string temp1 = temp.ToString();
-            txtCCategory.Text = temp1;
-            txtCProductID.Text = p.ProductID1;
-            txtCProductName.Text = p.ProductName1;
-            txtCSalePrice.Text = p.SalePrice1.ToString();
-            txtCDiscount.Text = p.DiscountPrice1.ToString();
         }
 
         private void btnCAddtoCart_Click(object sender, EventArgs e)
@@ -60,13 +69,7 @@ namespace Delivery.Forms.Customer
                 MessageBox.Show("Vui lòng nhập số lượng");
             }
             else
-            {
-                //newOrderID = OrderDAO.Instance.InsertOrder(this.CusID);
-
-                //thêm đơn hàng mới
-                // tạo list chi tiết đơn hàng
-                //newOrderID = OrderDAO.Instance.InsertOrder(CusID);
-
+            { 
 
                 //tạo 1 chi tiết đơn hàng tạm thời
                 string detailIDProduct = product.ProductID1;

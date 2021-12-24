@@ -32,7 +32,9 @@ namespace Delivery.Forms.Customer
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            string temp = datepickerOrder.Value.ToString();
+            DateTime date = Convert.ToDateTime(temp);
+            
         }
         private void LoadTempOrder()
         {
@@ -65,28 +67,37 @@ namespace Delivery.Forms.Customer
 
         private void gridNotBuy_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = 0;
-            float total;
-            string temp = txtTotalOrder.Text.ToString();
-            if (temp == "")
+            try
             {
-                txtTotalOrder.Text = "0";
-                total = 0;
-            }
-            if (e.ColumnIndex == 5 && e.RowIndex >= 0)
-            {
-                gridNotBuy.CommitEdit(DataGridViewDataErrorContexts.Commit);
-
-                if ((bool)gridNotBuy.CurrentCell.Value == true)
+                int index = 0;
+                float total;
+                string temp = txtTotalOrder.Text.ToString();
+                if (temp == "")
                 {
-                    //nếu đã click checkbox thì cập nhật total
-                    DataGridViewRow row = gridNotBuy.Rows[e.RowIndex];
-                    total = float.Parse(row.Cells[4].Value.ToString());
-                   // MessageBox.Show(row.Cells[4].Value.ToString());
-                    this.totalPrice += total;
-                    txtTotalOrder.Text = this.totalPrice.ToString();
+                    txtTotalOrder.Text = "0";
+                    total = 0;
                 }
+                if (e.ColumnIndex == 5 && e.RowIndex >= 0)
+                {
+                    gridNotBuy.CommitEdit(DataGridViewDataErrorContexts.Commit);
+
+                    if ((bool)gridNotBuy.CurrentCell.Value == true)
+                    {
+                        //nếu đã click checkbox thì cập nhật total
+                        DataGridViewRow row = gridNotBuy.Rows[e.RowIndex];
+                        total = float.Parse(row.Cells[4].Value.ToString());
+                        // MessageBox.Show(row.Cells[4].Value.ToString());
+                        this.totalPrice += total;
+                        txtTotalOrder.Text = this.totalPrice.ToString();
+                    }
+                }
+
             }
+            catch(Exception x)
+            {
+                Console.WriteLine("exception: " + x.Message);
+            }
+           
         }
 
         private void btnBuy_Click(object sender, EventArgs e)
@@ -98,52 +109,69 @@ namespace Delivery.Forms.Customer
             string method = cbMethod.SelectedItem.ToString();
             string status = "Đang chuẩn bị hàng";
             DateTime date = datepickerOrder.Value;
-            if (method == "")
-            {
-                
-            }
+           
+            //insert đơn hàng mới
             string newid = OrderDAO.Instance.InsertOrder(CusID, status, method, fee, date);
-            MessageBox.Show(newid);
+            
             foreach (DataGridViewRow row in gridNotBuy.Rows)
             {
                 bool ischeck = Convert.ToBoolean(row.Cells[5].Value.ToString());
+                //if (ischeck == null)
+                //{
+                //    MessageBox.Show("Mua hàng thất bại");
+                //}
                 //lấy mã sản phẩm tại vị trí hàng thỏa yêu cầu
-                string productid = row.Cells[0].Value.ToString();
-                foreach(DetailedOrder d in Global.listDetail)
-                {
-                    if (d.ProductId1 == productid)
-                    {
-                        Console.WriteLine("is this product");
-                        detail = d;
-                        break;
-                    }
-                }
+               
                 if (ischeck)
                 {
-                    Console.WriteLine("check");
+                    string productid = row.Cells[0].Value.ToString();
+                    foreach (DetailedOrder d in Global.listDetail)
+                    {
+                        if (d.ProductId1 == productid)
+                        {
+                            
+                            detail = d;
+                            break;
+                        }
+                    }
+                 
                     //insert chi tiết đơn hàng
+                    //kiểm tra số lượng tồn
+                    //object temp = DataProvider.Instance.ExecuteScalar("select soluongton from sanpham where masp = '" + detail.ProductId1 + "'");
+                    //int inventory = Convert.ToInt32(temp);
+                    //if (inventory == 0)
+                    //{
+                    //    MessageBox.Show("Sản phẩm hết hàng");
+                    //}
                     result = OrderDAO.Instance.InsertDetailOrder(newid, detail);
+
                     if (result > 0)
                     {
-                        MessageBox.Show("Thanh toán sản phẩm " + productid + " thành công");
+                        MessageBox.Show(newid + " Thanh toán sản phẩm " + productid + " thành công");
                     }
                     else
                     {
-                        MessageBox.Show("Thanh toán sản phẩm " + productid + " thất bại");
+                        MessageBox.Show(newid + " Thanh toán sản phẩm " + productid + " thất bại");
                     }
                 }
-                else
-                {
-                    MessageBox.Show("no check check");
-                }
+               
             }
         }
         void LoadComboBoxMethod()
         {
-            cbMethod.Items.Add("Thẻ");
-            cbMethod.Items.Add("Tiền mặt");
-            cbMethod.SelectedIndex = 0;
-            txtShipFee.Text = "30";
+            
+            try
+            {
+                cbMethod.Items.Add("Thẻ");
+                cbMethod.Items.Add("Tiền mặt");
+                cbMethod.SelectedIndex = 0;
+                txtShipFee.Text = "30";
+            }catch(Exception e)
+            {
+                Console.WriteLine("EXCEPTION: " + e.Message);
+            }
+
+            
         }
     }
 }

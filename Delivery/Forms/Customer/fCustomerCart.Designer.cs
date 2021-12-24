@@ -127,9 +127,8 @@ namespace Delivery.Forms.Customer
             // 
             // datepickerOrder
             // 
-            this.datepickerOrder.Enabled = false;
             this.datepickerOrder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datepickerOrder.Location = new System.Drawing.Point(33, 122);
+            this.datepickerOrder.Location = new System.Drawing.Point(29, 174);
             this.datepickerOrder.Name = "datepickerOrder";
             this.datepickerOrder.Size = new System.Drawing.Size(233, 27);
             this.datepickerOrder.TabIndex = 9;
@@ -172,7 +171,7 @@ namespace Delivery.Forms.Customer
             this.btnBuy.IdleIconLeftImage = null;
             this.btnBuy.IdleIconRightImage = null;
             this.btnBuy.IndicateFocus = false;
-            this.btnBuy.Location = new System.Drawing.Point(82, 431);
+            this.btnBuy.Location = new System.Drawing.Point(37, 98);
             this.btnBuy.Name = "btnBuy";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -227,7 +226,7 @@ namespace Delivery.Forms.Customer
             this.txtTotalOrder.IconRight = null;
             this.txtTotalOrder.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotalOrder.Lines = new string[0];
-            this.txtTotalOrder.Location = new System.Drawing.Point(33, 357);
+            this.txtTotalOrder.Location = new System.Drawing.Point(29, 409);
             this.txtTotalOrder.MaxLength = 32767;
             this.txtTotalOrder.MinimumSize = new System.Drawing.Size(100, 35);
             this.txtTotalOrder.Modified = false;
@@ -278,7 +277,7 @@ namespace Delivery.Forms.Customer
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.label6.Location = new System.Drawing.Point(29, 333);
+            this.label6.Location = new System.Drawing.Point(25, 385);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 21);
             this.label6.TabIndex = 6;
@@ -290,7 +289,7 @@ namespace Delivery.Forms.Customer
             this.cbMethod.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
             this.cbMethod.FormattingEnabled = true;
-            this.cbMethod.Location = new System.Drawing.Point(33, 279);
+            this.cbMethod.Location = new System.Drawing.Point(29, 331);
             this.cbMethod.Name = "cbMethod";
             this.cbMethod.Size = new System.Drawing.Size(233, 29);
             this.cbMethod.TabIndex = 5;
@@ -300,7 +299,7 @@ namespace Delivery.Forms.Customer
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.label5.Location = new System.Drawing.Point(29, 255);
+            this.label5.Location = new System.Drawing.Point(25, 307);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 21);
             this.label5.TabIndex = 4;
@@ -334,7 +333,7 @@ namespace Delivery.Forms.Customer
             this.txtShipFee.IconRight = null;
             this.txtShipFee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtShipFee.Lines = new string[0];
-            this.txtShipFee.Location = new System.Drawing.Point(33, 196);
+            this.txtShipFee.Location = new System.Drawing.Point(29, 248);
             this.txtShipFee.MaxLength = 32767;
             this.txtShipFee.MinimumSize = new System.Drawing.Size(100, 35);
             this.txtShipFee.Modified = false;
@@ -385,7 +384,7 @@ namespace Delivery.Forms.Customer
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.label4.Location = new System.Drawing.Point(29, 172);
+            this.label4.Location = new System.Drawing.Point(25, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 21);
             this.label4.TabIndex = 1;
@@ -396,7 +395,7 @@ namespace Delivery.Forms.Customer
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(55)))));
-            this.label3.Location = new System.Drawing.Point(22, 98);
+            this.label3.Location = new System.Drawing.Point(18, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 21);
             this.label3.TabIndex = 0;
