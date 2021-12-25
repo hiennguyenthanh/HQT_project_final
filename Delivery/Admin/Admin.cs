@@ -22,6 +22,7 @@ namespace Delivery.Admin
             NhanVien nv = new NhanVien();
             this.Hide();
             nv.ShowDialog();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace Delivery.Admin
             DoiTac dt = new DoiTac();
             this.Hide();
             dt.ShowDialog();
+            this.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace Delivery.Admin
             TaiXe tx = new TaiXe();
             this.Hide();
             tx.ShowDialog();
+            this.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -43,6 +46,7 @@ namespace Delivery.Admin
             KhachHang kh = new KhachHang();
             this.Hide();
             kh.ShowDialog();
+            this.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -50,6 +54,7 @@ namespace Delivery.Admin
             HopDong hd = new HopDong();
             this.Hide();
             hd.ShowDialog();
+            this.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -57,6 +62,13 @@ namespace Delivery.Admin
             TaiKhoan tk = new TaiKhoan();
             this.Hide();
             tk.ShowDialog();
+            this.Show();
+        }
+
+        private void Admin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                e.Cancel = true;
         }
     }
 }

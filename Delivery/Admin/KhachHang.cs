@@ -38,6 +38,7 @@ namespace Delivery.Admin
             connection = new SqlConnection(str);
             connection.Open();
             loadData();
+            connection.Close();
         }
     }
 }

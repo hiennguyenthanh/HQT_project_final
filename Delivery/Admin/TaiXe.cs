@@ -25,7 +25,7 @@ namespace Delivery.Admin
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            dgv_taixe.DataSource = table;
         }
         public TaiXe()
         {
@@ -37,6 +37,7 @@ namespace Delivery.Admin
             connection = new SqlConnection(str);
             connection.Open();
             loadData();
+            connection.Close();
         }
     }
 }

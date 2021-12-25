@@ -26,7 +26,7 @@ namespace Delivery.Admin
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            dgv_doitac.DataSource = table;
         }
         public DoiTac()
         {
@@ -38,6 +38,7 @@ namespace Delivery.Admin
             connection = new SqlConnection(str);
             connection.Open();
             loadData();
+            connection.Close();
         }
     }
 }
