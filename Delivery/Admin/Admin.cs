@@ -51,5 +51,12 @@ namespace Delivery.Admin
             this.Hide();
             hd.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            TaiKhoan tk = new TaiKhoan();
+            this.Hide();
+            tk.ShowDialog();
+        }
     }
 }

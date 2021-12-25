@@ -76,3 +76,4 @@ C:\Users\PC\Source\Repos\HQT_project_final\Delivery\obj\Debug\Delivery.Admin.Kha
 C:\Users\PC\Source\Repos\HQT_project_final\Delivery\obj\Debug\Delivery.Admin.NhanVien.resources
 C:\Users\PC\Source\Repos\HQT_project_final\Delivery\obj\Debug\Delivery.Admin.TaiXe.resources
 C:\Users\PC\Source\Repos\HQT_project_final\Delivery\obj\Debug\Delivery.Admin.Admin.resources
+C:\Users\PC\Source\Repos\HQT_project_final\Delivery\obj\Debug\Delivery.Admin.TaiKhoan.resources

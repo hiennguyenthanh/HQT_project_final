@@ -94,7 +94,7 @@ namespace Delivery.Forms
             this.gridNotDone.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridNotDone.EnableHeadersVisualStyles = false;
             this.gridNotDone.Location = new System.Drawing.Point(15, 80);
-            this.gridNotDone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridNotDone.Margin = new System.Windows.Forms.Padding(4);
             this.gridNotDone.Name = "gridNotDone";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(98)))), ((int)(((byte)(36)))));
@@ -157,7 +157,7 @@ namespace Delivery.Forms
             this.btnScrollNotDone.DurationBeforeShrink = 2000;
             this.btnScrollNotDone.LargeChange = 10;
             this.btnScrollNotDone.Location = new System.Drawing.Point(1099, 124);
-            this.btnScrollNotDone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnScrollNotDone.Margin = new System.Windows.Forms.Padding(5);
             this.btnScrollNotDone.Maximum = 100;
             this.btnScrollNotDone.Minimum = 0;
             this.btnScrollNotDone.MinimumThumbLength = 18;
@@ -199,7 +199,7 @@ namespace Delivery.Forms
             this.btnArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(67)))), ((int)(((byte)(30)))));
             this.btnArea.Location = new System.Drawing.Point(833, 534);
-            this.btnArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnArea.Margin = new System.Windows.Forms.Padding(4);
             this.btnArea.Name = "btnArea";
             this.btnArea.Size = new System.Drawing.Size(253, 49);
             this.btnArea.TabIndex = 3;
@@ -214,7 +214,7 @@ namespace Delivery.Forms
             this.panel1.Controls.Add(this.cbOrderStatus);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(40, 513);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 70);
             this.panel1.TabIndex = 4;
@@ -259,7 +259,7 @@ namespace Delivery.Forms
             this.btnDUpdateOrdeStatus.IdleIconRightImage = null;
             this.btnDUpdateOrdeStatus.IndicateFocus = false;
             this.btnDUpdateOrdeStatus.Location = new System.Drawing.Point(336, 21);
-            this.btnDUpdateOrdeStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDUpdateOrdeStatus.Margin = new System.Windows.Forms.Padding(4);
             this.btnDUpdateOrdeStatus.Name = "btnDUpdateOrdeStatus";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -296,7 +296,7 @@ namespace Delivery.Forms
             this.cbOrderStatus.IntegralHeight = false;
             this.cbOrderStatus.ItemHeight = 16;
             this.cbOrderStatus.Location = new System.Drawing.Point(0, 32);
-            this.cbOrderStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbOrderStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbOrderStatus.Name = "cbOrderStatus";
             this.cbOrderStatus.Size = new System.Drawing.Size(327, 24);
             this.cbOrderStatus.TabIndex = 1;
@@ -323,7 +323,7 @@ namespace Delivery.Forms
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.btnScrollNotDone);
             this.Controls.Add(this.gridNotDone);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormNotDone";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Danh sách đơn hàng chưa giao";
