@@ -36,12 +36,13 @@ namespace Delivery.Admin
             // 
             // dgv_taixe
             // 
+            this.dgv_taixe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_taixe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_taixe.Location = new System.Drawing.Point(1, 105);
+            this.dgv_taixe.Location = new System.Drawing.Point(0, 140);
             this.dgv_taixe.Name = "dgv_taixe";
             this.dgv_taixe.RowHeadersWidth = 51;
             this.dgv_taixe.RowTemplate.Height = 24;
-            this.dgv_taixe.Size = new System.Drawing.Size(758, 366);
+            this.dgv_taixe.Size = new System.Drawing.Size(981, 412);
             this.dgv_taixe.TabIndex = 0;
             // 
             // label1
@@ -49,7 +50,7 @@ namespace Delivery.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(281, 34);
+            this.label1.Location = new System.Drawing.Point(371, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 38);
             this.label1.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_taixe);
             this.Name = "TaiXe";

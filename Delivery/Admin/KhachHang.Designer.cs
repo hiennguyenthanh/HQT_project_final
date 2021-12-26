@@ -36,12 +36,13 @@ namespace Delivery.Admin
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(-3, 129);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(758, 363);
+            this.dataGridView1.Size = new System.Drawing.Size(985, 424);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -49,7 +50,7 @@ namespace Delivery.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(237, 36);
+            this.label1.Location = new System.Drawing.Point(338, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 38);
             this.label1.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "KhachHang";

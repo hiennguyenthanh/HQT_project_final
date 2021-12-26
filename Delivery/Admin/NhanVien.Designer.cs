@@ -54,6 +54,7 @@ namespace Delivery.Admin
             // 
             // dgv_nhanvien
             // 
+            this.dgv_nhanvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -83,7 +84,8 @@ namespace Delivery.Admin
             this.dgv_nhanvien.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_nhanvien.RowHeadersWidth = 51;
             this.dgv_nhanvien.RowTemplate.Height = 24;
-            this.dgv_nhanvien.Size = new System.Drawing.Size(758, 258);
+            this.dgv_nhanvien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_nhanvien.Size = new System.Drawing.Size(982, 338);
             this.dgv_nhanvien.TabIndex = 0;
             this.dgv_nhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
@@ -92,7 +94,7 @@ namespace Delivery.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(256, 9);
+            this.label1.Location = new System.Drawing.Point(368, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 38);
             this.label1.TabIndex = 1;
@@ -114,7 +116,7 @@ namespace Delivery.Admin
             // 
             // tb_gioitinh
             // 
-            this.tb_gioitinh.Location = new System.Drawing.Point(439, 132);
+            this.tb_gioitinh.Location = new System.Drawing.Point(517, 128);
             this.tb_gioitinh.Name = "tb_gioitinh";
             this.tb_gioitinh.Size = new System.Drawing.Size(159, 22);
             this.tb_gioitinh.TabIndex = 4;
@@ -122,7 +124,7 @@ namespace Delivery.Admin
             // tb_ngaysinh
             // 
             this.tb_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.tb_ngaysinh.Location = new System.Drawing.Point(439, 70);
+            this.tb_ngaysinh.Location = new System.Drawing.Point(517, 74);
             this.tb_ngaysinh.Name = "tb_ngaysinh";
             this.tb_ngaysinh.Size = new System.Drawing.Size(159, 22);
             this.tb_ngaysinh.TabIndex = 5;
@@ -154,7 +156,7 @@ namespace Delivery.Admin
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(330, 76);
+            this.label4.Location = new System.Drawing.Point(408, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 8;
@@ -165,7 +167,7 @@ namespace Delivery.Admin
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(330, 134);
+            this.label5.Location = new System.Drawing.Point(408, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 19);
             this.label5.TabIndex = 9;
@@ -173,7 +175,7 @@ namespace Delivery.Admin
             // 
             // bt_them
             // 
-            this.bt_them.Location = new System.Drawing.Point(645, 70);
+            this.bt_them.Location = new System.Drawing.Point(830, 69);
             this.bt_them.Name = "bt_them";
             this.bt_them.Size = new System.Drawing.Size(75, 23);
             this.bt_them.TabIndex = 10;
@@ -183,7 +185,7 @@ namespace Delivery.Admin
             // 
             // bt_xoa
             // 
-            this.bt_xoa.Location = new System.Drawing.Point(645, 132);
+            this.bt_xoa.Location = new System.Drawing.Point(830, 128);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(75, 23);
             this.bt_xoa.TabIndex = 11;
@@ -193,7 +195,7 @@ namespace Delivery.Admin
             // 
             // bt_sua
             // 
-            this.bt_sua.Location = new System.Drawing.Point(645, 186);
+            this.bt_sua.Location = new System.Drawing.Point(830, 182);
             this.bt_sua.Name = "bt_sua";
             this.bt_sua.Size = new System.Drawing.Size(75, 23);
             this.bt_sua.TabIndex = 12;
@@ -224,7 +226,7 @@ namespace Delivery.Admin
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(330, 185);
+            this.label7.Location = new System.Drawing.Point(408, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 19);
             this.label7.TabIndex = 15;
@@ -232,7 +234,7 @@ namespace Delivery.Admin
             // 
             // tb_userpass
             // 
-            this.tb_userpass.Location = new System.Drawing.Point(439, 183);
+            this.tb_userpass.Location = new System.Drawing.Point(517, 182);
             this.tb_userpass.Name = "tb_userpass";
             this.tb_userpass.Size = new System.Drawing.Size(159, 22);
             this.tb_userpass.TabIndex = 16;
@@ -242,7 +244,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.tb_userpass);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

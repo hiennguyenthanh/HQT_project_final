@@ -36,12 +36,13 @@ namespace Delivery.Admin
             // 
             // dgv_hopdong
             // 
+            this.dgv_hopdong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_hopdong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_hopdong.Location = new System.Drawing.Point(0, 114);
+            this.dgv_hopdong.Location = new System.Drawing.Point(-2, 143);
             this.dgv_hopdong.Name = "dgv_hopdong";
             this.dgv_hopdong.RowHeadersWidth = 51;
             this.dgv_hopdong.RowTemplate.Height = 24;
-            this.dgv_hopdong.Size = new System.Drawing.Size(758, 358);
+            this.dgv_hopdong.Size = new System.Drawing.Size(985, 410);
             this.dgv_hopdong.TabIndex = 0;
             // 
             // label1
@@ -49,7 +50,7 @@ namespace Delivery.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(253, 41);
+            this.label1.Location = new System.Drawing.Point(350, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 38);
             this.label1.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_hopdong);
             this.Name = "HopDong";

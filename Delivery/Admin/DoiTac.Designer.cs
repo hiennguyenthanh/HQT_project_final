@@ -36,12 +36,13 @@ namespace Delivery.Admin
             // 
             // dgv_doitac
             // 
+            this.dgv_doitac.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_doitac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_doitac.Location = new System.Drawing.Point(0, 111);
+            this.dgv_doitac.Location = new System.Drawing.Point(-3, 136);
             this.dgv_doitac.Name = "dgv_doitac";
             this.dgv_doitac.RowHeadersWidth = 51;
             this.dgv_doitac.RowTemplate.Height = 24;
-            this.dgv_doitac.Size = new System.Drawing.Size(758, 362);
+            this.dgv_doitac.Size = new System.Drawing.Size(986, 419);
             this.dgv_doitac.TabIndex = 0;
             // 
             // label1
@@ -49,7 +50,7 @@ namespace Delivery.Admin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(269, 37);
+            this.label1.Location = new System.Drawing.Point(383, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 38);
             this.label1.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_doitac);
             this.Name = "DoiTac";

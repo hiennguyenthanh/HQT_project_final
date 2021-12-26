@@ -43,12 +43,13 @@ namespace Delivery.Admin
             // 
             // dgv_taikhoan
             // 
+            this.dgv_taikhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_taikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_taikhoan.Location = new System.Drawing.Point(0, 191);
+            this.dgv_taikhoan.Location = new System.Drawing.Point(1, 178);
             this.dgv_taikhoan.Name = "dgv_taikhoan";
             this.dgv_taikhoan.RowHeadersWidth = 51;
             this.dgv_taikhoan.RowTemplate.Height = 24;
-            this.dgv_taikhoan.Size = new System.Drawing.Size(758, 283);
+            this.dgv_taikhoan.Size = new System.Drawing.Size(749, 295);
             this.dgv_taikhoan.TabIndex = 0;
             this.dgv_taikhoan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_taikhoan_CellContentClick);
             // 
@@ -133,9 +134,9 @@ namespace Delivery.Admin
             // 
             // tb_taikhoan
             // 
-            this.tb_taikhoan.Location = new System.Drawing.Point(120, 79);
+            this.tb_taikhoan.Location = new System.Drawing.Point(91, 79);
             this.tb_taikhoan.Name = "tb_taikhoan";
-            this.tb_taikhoan.Size = new System.Drawing.Size(100, 25);
+            this.tb_taikhoan.Size = new System.Drawing.Size(129, 25);
             this.tb_taikhoan.TabIndex = 9;
             // 
             // TaiKhoan
@@ -143,7 +144,7 @@ namespace Delivery.Admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(70)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(758, 472);
+            this.ClientSize = new System.Drawing.Size(750, 472);
             this.Controls.Add(this.tb_taikhoan);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
